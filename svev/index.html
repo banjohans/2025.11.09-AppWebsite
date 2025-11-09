@@ -10,6 +10,11 @@
   </head>
   <body>
     <header>
+      <button id="hamburger" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <div class="header-left">
         <a id="home-nb" href="../index.html" class="home-link">Heim</a>
         <a id="home-en" href="../index.html" class="home-link hidden">Home</a>
@@ -41,6 +46,55 @@
         </div>
       </div>
     </header>
+
+    <div id="mobile-menu" class="mobile-menu">
+      <div class="mobile-menu-section">
+        <a href="../index.html" class="mobile-menu-link">
+          <span id="mobile-home-nb">🏠 Heim</span>
+          <span id="mobile-home-en" class="hidden">🏠 Home</span>
+        </a>
+      </div>
+
+      <div class="mobile-menu-section">
+        <a href="index.html" class="mobile-menu-link">
+          <img src="../icon.png" alt="Svev" />
+          <span>Svev</span>
+        </a>
+        <div class="mobile-submenu">
+          <div id="mobile-svev-nav-nb">
+            <a href="#bruksomrade">Bruksområde</a>
+            <a href="#funksjonar">Funksjonar</a>
+            <a href="#auto-temperering">Auto-temperering</a>
+          </div>
+          <div id="mobile-svev-nav-en" class="hidden">
+            <a href="#applications">Applications</a>
+            <a href="#features">Features</a>
+            <a href="#auto-tempering">Auto-tempering</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mobile-menu-section">
+        <a href="../fot/index.html" class="mobile-menu-link">
+          <img src="../fot/foticon.png" alt="Fot" />
+          <span>Fot</span>
+        </a>
+        <div class="mobile-submenu">
+          <a href="../fot/index.html#use-cases">
+            <span id="mobile-fot-uses-nb">Bruksområde</span>
+            <span id="mobile-fot-uses-en" class="hidden">Applications</span>
+          </a>
+          <a href="../fot/index.html#features">
+            <span id="mobile-fot-features-nb">Funksjonar</span>
+            <span id="mobile-fot-features-en" class="hidden">Features</span>
+          </a>
+          <a href="../fot/index.html#sections">
+            <span id="mobile-fot-sections-nb">Seksjoner</span>
+            <span id="mobile-fot-sections-en" class="hidden">Sections</span>
+          </a>
+        </div>
+      </div>
+    </div>
     <main>
       <section id="nb-content">
         <h1>Om Svev<img src="../icon.png" alt="Svev ikon" /></h1>
@@ -355,11 +409,19 @@
       <p>&copy; 2025 Austestad. All rights reserved.</p>
     </footer>
 
+    <script src="../shared/hamburger.js"></script>
     <script src="../shared/language.js"></script>
     <script>
       initLanguageSwitch(
         { nb: "nb-content", en: "en-content" },
-        { nb: "nav-nb", en: "nav-en" }
+        { nb: "nav-nb", en: "nav-en" },
+        { nb: "home-nb", en: "home-en" },
+        { nb: "mobile-home-nb", en: "mobile-home-en" },
+        { nb: "mobile-svev-nav-nb", en: "mobile-svev-nav-en" },
+        { nb: "mobile-fot-uses-nb", en: "mobile-fot-uses-en" },
+        { nb: "mobile-fot-features-nb", en: "mobile-fot-features-en" },
+        { nb: "mobile-fot-sections-nb", en: "mobile-fot-sections-en" },
+        { nb: "btn-nb", en: "btn-en" }
       );
     </script>
   </body>
