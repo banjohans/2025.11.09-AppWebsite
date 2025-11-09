@@ -179,8 +179,13 @@ header {
   }
 
   .screenshot {
-    width: 90%;
+    width: 100%;
     max-width: 100%;
+    margin: 20px 0 8px 0;
+  }
+
+  .caption {
+    font-size: 13px;
   }
 }
 
@@ -245,12 +250,13 @@ h3 {
 }
 
 .screenshot {
-  width: 50%;
-  max-width: 450px;
+  width: 100%;
+  max-width: 600px;
   height: auto;
   border-radius: 12px;
   margin: 24px 0 8px 0;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  display: block;
 }
 
 .caption {
