@@ -20,6 +20,7 @@ function initLanguageSwitch(...elementPairs) {
       if (pair.nb) pair.nb.classList.remove("hidden");
       if (pair.en) pair.en.classList.add("hidden");
     });
+    localStorage.setItem("selectedLanguage", "nb");
   }
 
   function switchToEnglish() {
@@ -29,8 +30,18 @@ function initLanguageSwitch(...elementPairs) {
       if (pair.nb) pair.nb.classList.add("hidden");
       if (pair.en) pair.en.classList.remove("hidden");
     });
+    localStorage.setItem("selectedLanguage", "en");
   }
 
   btnNb.addEventListener("click", switchToNorwegian);
   btnEn.addEventListener("click", switchToEnglish);
+
+  // Hent lagra språk og sett det ved sideinnlasting
+  const savedLanguage = localStorage.getItem("selectedLanguage");
+  if (savedLanguage === "en") {
+    switchToEnglish();
+  } else {
+    // Standard er norsk
+    switchToNorwegian();
+  }
 }
