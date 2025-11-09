@@ -147,24 +147,6 @@ header {
     font-size: 11px;
   }
 
-  .lang-switch button#btn-nb::before {
-    content: "No";
-  }
-
-  .lang-switch button#btn-en::before {
-    content: "Eng";
-  }
-
-  .lang-switch button#btn-nb,
-  .lang-switch button#btn-en {
-    font-size: 0;
-  }
-
-  .lang-switch button#btn-nb::before,
-  .lang-switch button#btn-en::before {
-    font-size: 11px;
-  }
-
   h1 {
     font-size: 32px;
   }

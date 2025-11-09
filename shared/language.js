@@ -1,27 +1,36 @@
 // Felles JavaScript for språkbytte
-function initLanguageSwitch(contentIds, navIds) {
+function initLanguageSwitch(...elementPairs) {
   const btnNb = document.getElementById("btn-nb");
   const btnEn = document.getElementById("btn-en");
-  const nb = document.getElementById(contentIds.nb);
-  const en = document.getElementById(contentIds.en);
-  const navNb = document.getElementById(navIds.nb);
-  const navEn = document.getElementById(navIds.en);
 
-  btnNb.addEventListener("click", () => {
+  if (!btnNb || !btnEn) return;
+
+  // Samle alle elementer
+  const elements = elementPairs
+    .map((pair) => ({
+      nb: document.getElementById(pair.nb),
+      en: document.getElementById(pair.en),
+    }))
+    .filter((pair) => pair.nb || pair.en);
+
+  function switchToNorwegian() {
     btnNb.classList.add("active");
     btnEn.classList.remove("active");
-    nb.classList.remove("hidden");
-    en.classList.add("hidden");
-    navNb.classList.remove("hidden");
-    navEn.classList.add("hidden");
-  });
+    elements.forEach((pair) => {
+      if (pair.nb) pair.nb.classList.remove("hidden");
+      if (pair.en) pair.en.classList.add("hidden");
+    });
+  }
 
-  btnEn.addEventListener("click", () => {
+  function switchToEnglish() {
     btnEn.classList.add("active");
     btnNb.classList.remove("active");
-    en.classList.remove("hidden");
-    nb.classList.add("hidden");
-    navEn.classList.remove("hidden");
-    navNb.classList.add("hidden");
-  });
+    elements.forEach((pair) => {
+      if (pair.nb) pair.nb.classList.add("hidden");
+      if (pair.en) pair.en.classList.remove("hidden");
+    });
+  }
+
+  btnNb.addEventListener("click", switchToNorwegian);
+  btnEn.addEventListener("click", switchToEnglish);
 }

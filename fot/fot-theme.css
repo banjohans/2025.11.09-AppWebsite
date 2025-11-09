@@ -43,3 +43,8 @@ footer {
 footer p {
   color: var(--footer-text);
 }
+
+video.screenshot {
+  object-fit: cover;
+  object-position: -2px center;
+}
