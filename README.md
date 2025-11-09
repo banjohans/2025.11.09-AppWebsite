@@ -4,19 +4,30 @@ Dette prosjektet er organisert for å støtte flere app-sider med delt funksjona
 
 ## Mappestruktur
 
+````markdown
+# App Website Struktur
+
+Dette prosjektet er organisert for å støtte flere app-sider med delt funksjonalitet.
+
+## Mappestruktur
+
 ```
+├── index.html           # Landingsside med begge apper
+│
 ├── shared/              # Delte filer for alle apper
 │   ├── layout.css       # Felles layout og struktur
 │   └── language.js      # Felles språkbyttefunksjonalitet
 │
 ├── svev/                # Svev-spesifikke filer
+│   ├── index.html       # Svev hovedside
 │   └── svev-theme.css   # Svev fargetema (varme bruntoner)
 │
 ├── fot/                 # Fot-spesifikke filer
 │   ├── index.html       # Fot hovedside
-│   └── fot-theme.css    # Fot fargetema (kjølige blåtoner)
+│   ├── foticon.png      # Fot ikon
+│   ├── fot1.png, fot2.png # Fot screenshots
+│   └── fot-theme.css    # Fot fargetema (varme raudtoner)
 │
-├── index.html           # Svev hovedside (rotside)
 ├── icon.png             # Svev ikon
 ├── Screenshot.png       # Svev screenshots
 ├── Screenshot2.png
@@ -106,10 +117,10 @@ Dette prosjektet er organisert for å støtte flere app-sider med delt funksjona
 - Primær: #d4a574 (gylden)
 - Bakgrunn: #1a1410 (mørk brun)
 
-### Fot (kjølige toner)
+### Fot (varme raudtoner)
 
-- Primær: #7aa3cc (blå)
-- Bakgrunn: #0f1419 (mørk blå/grå)
+- Primær: #d47474 (raud/terracotta)
+- Bakgrunn: #1a1410 (mørk brun)
 
 ## Opprydding
 
@@ -117,3 +128,4 @@ Følgende gamle filer kan slettes etter migrering:
 
 - `style.css` (erstattet av shared/layout.css + svev/svev-theme.css)
 - `script.js` (erstattet av shared/language.js)
+````

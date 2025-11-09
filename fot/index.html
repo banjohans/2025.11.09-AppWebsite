@@ -10,40 +10,65 @@
   </head>
   <body>
     <header>
-      <div class="logo">
-        <img src="foticon.png" alt="Fot app‑ikon" />
-        <span>Fot</span>
+      <div class="header-left">
+        <a id="home-nb" href="../index.html" class="home-link">Heim</a>
+        <a id="home-en" href="../index.html" class="home-link hidden">Home</a>
+        <nav class="app-nav">
+          <a href="../svev/index.html">
+            <img src="../icon.png" alt="Svev" />
+            <span>Svev</span>
+          </a>
+          <a href="index.html" style="opacity: 0.5; cursor: default">
+            <img src="foticon.png" alt="Fot" />
+            <span>Fot</span>
+          </a>
+        </nav>
       </div>
-      <nav id="nav-nb" class="nav-menu">
-        <a href="#bruksomrade">Bruksområde</a>
-        <a href="#funksjonar">Funksjonar</a>
-        <a href="#seksjoner">Seksjoner</a>
-      </nav>
-      <nav id="nav-en" class="nav-menu hidden">
-        <a href="#applications">Applications</a>
-        <a href="#features">Features</a>
-        <a href="#sections">Sections</a>
-      </nav>
-      <div class="lang-switch">
-        <button id="btn-nb" class="active">Norsk</button>
-        <button id="btn-en">English</button>
+      <div class="header-right">
+        <nav id="nav-nb" class="nav-menu">
+          <a href="#bruksomrade">Bruksområde</a>
+          <a href="#funksjonar">Funksjonar</a>
+          <a href="#seksjoner">Seksjoner</a>
+        </nav>
+        <nav id="nav-en" class="nav-menu hidden">
+          <a href="#applications">Applications</a>
+          <a href="#features">Features</a>
+          <a href="#sections">Sections</a>
+        </nav>
+        <div class="lang-switch">
+          <button id="btn-nb" class="active">Norsk</button>
+          <button id="btn-en">English</button>
+        </div>
       </div>
     </header>
     <main>
       <section id="nb-content">
         <h1>Om Fot<img src="foticon.png" alt="Fot ikon" /></h1>
+        <p
+          style="
+            font-size: 20px;
+            font-weight: 500;
+            color: var(--accent);
+            margin-bottom: 24px;
+          "
+        >
+          Meistrar elastisk rytmikk og asymmetriske taktarter med levande
+          mikrotiming.
+        </p>
         <p>
-          FOT (Folktronome / "fri metronom") er eit rytme- og tidsverktøy som
-          gjer metronomen elastisk og kulturspesifikk. I staden for berre BPM og
-          jamne slag arbeider FOT med syklusar ("takter") der kvar einskild beat
-          kan få sin eigen tidsprosent, underdelingsstruktur, tyngd (velocity)
-          og tone (MIDI‑note). Du kan forme interne mikro‑forskyvingar og
-          aksentar slik dei faktisk er i tradisjonelle dansar og i levande
-          "human" groove – t.d. Telespringar og Valdresspringar – eller lage
-          heilt eigne asymmetriske pulssirklar. Appen støttar fleire samtidige
-          instansar som kan startast/stoppast synkront via multicast, og gjev
-          eit visuelt, interaktivt "slagkort"-grensesnitt for presis men fri
-          rytmisk modellering.
+          FOT er eit rytme- og tidsverktøy som takler elastiske rytmer,
+          asymmetriske taktarter og mikrotiming. Den kan brukast åleine med
+          metronom-klikk-lydar, men den er spesielt kraftig når den nyttast med
+          midi sends. I staden for berre BPM og jamne slag arbeider FOT med
+          syklusar ("takter") der kvar einskild beat kan få sin eigen
+          tidsprosent, underdelingsstruktur, tyngd (velocity) og tone
+          (MIDI‑note). Du kan forme interne mikro‑forskyvingar og aksentar slik
+          dei faktisk er i tradisjonelle dansar og folkemusikalske uttrykk –
+          t.d. norske Telespringar og Valdresspringar – eller lage heilt eigne
+          asymmetriske pulssirklar med mange slag. Appen støttar fleire
+          samtidige instansar som kan startast/stoppast synkront via multicast,
+          og gjev eit visuelt, interaktivt "slagkort"-grensesnitt for presis men
+          fri rytmisk modellering.
         </p>
         <img src="fot1.png" alt="Skjermbilde av Fot-appen" class="screenshot" />
         <p class="caption">Bilde frå hovedvindu</p>
@@ -52,38 +77,45 @@
         <ul>
           <li>
             <strong>Utøvarar:</strong> Øv inn dans- og folkemusikkrytmar med
-            ujamn intern mikrostruktur; tren timingkonsistens og
-            aksentplassering
+            ujamn intern mikrostruktur; eller fritt konstruerte rytmiske looper;
+            tren timingkonsistens og aksentplassering. Øv inn polyrytmiske
+            mønster både metriske og asymmetriske. Bruk metronomen og sequencer
+            som rytmegrunnlag til live-framføring, og bland akustiske uttrykk
+            med eit elektronisk domene.
           </li>
           <li>
             <strong>Komponistar/Arrangørar:</strong> Bygg polymetriske eller
             asymmetriske taktformer ved å justere prosentfordeling og
-            underdelingar per slag; eksportér til vidare bruk
+            underdelingar per slag; ta opp det du lager i ditt DAW, eller
+            eksportér MIDI til vidare bruk i noteskrivingsprogram.
           </li>
           <li>
             <strong>Folkemusikkpedagogar:</strong> Demonstrer korleis
             springarrytmar og andre tradisjonelle mønster avvik frå jamn
-            kvartpuls; visualiser prosentfordeling og "feel"
+            kvartpuls; visualiser prosentfordeling og få tilgang til handfaste
+            forklaringer på ulike taktmønster sin eigenart.
           </li>
           <li>
             <strong>Improvisatørar:</strong> Skap fleksible tidsrammer der
             kjernepuls kan variere organisk, og test alternative indre
-            proporsjonar i sanntid
+            proporsjonar i sanntid. Lag ekstreme rytmiske landskap som kan leve
+            fritt eller gå i sync.
           </li>
           <li>
             <strong>Forskarar/Analytikarar:</strong> Samle strukturerte
             timingdata (takter per minutt, gjennomsnitt takt tid, prosent per
-            slag) for seinare statistisk analyse
+            slag) for analyse, og påvis skilnader i ulike framføringspraksiser,
+            epoker eller stilar.
           </li>
           <li>
-            <strong>Ensemble / Dansepraksis:</strong> Distribuer synkron
-            start/stopp og mute til fleire instansar i rommet; juster puls og
-            aksentar live etter behov
+            <strong>Ensemble / Dansepraksis:</strong> Spel og/eller dans til
+            ulike metronominstanser, og finn nye måtar å samhandle på gjennom
+            løynde rytmiske strukturar.
           </li>
           <li>
             <strong>Undervisning i rytmisk presisjon:</strong> Vis interaktivt
             korleis endring av prosentsatsar, underdelingar og tyngd påverkar
-            grooveoppleving
+            grooveoppleving og mikrotiming.
           </li>
         </ul>
 
@@ -97,17 +129,19 @@
           <li>
             <strong>Prosentfordeling per slag:</strong> Kvar beat inne i
             syklusen kan få ein del av total takt‑tid (snittprosent) →
-            modellering av ujamn intern struktur
+            modellering av ujamn intern struktur. Dra i kakestykkene på
+            metronomhjulet for å justere, og klikk på kakestykkene for å endre
+            underdelinger.
           </li>
           <li>
             <strong>Slagkort (beat cards):</strong> Visuelle modulære "kort" for
             slag med slider (tyngd / prosent), underdelingstellar, og
-            MIDI‑parametrar
+            MIDI‑parametrar. Skriv inn verdiane direkte eller dra og slipp i
+            sliderene.
           </li>
           <li>
             <strong>Underdeling per beat:</strong> Uavhengig styring av
-            subdivisjonar (triolar, asymmetri, multiple) per enkelt slag via
-            klikk (venstre +1, høgre −1, Alt *2)
+            subdivisjonar (opp til 16 per slag) enkelt slag.
           </li>
           <li>
             <strong>Tyngd og lyd:</strong> Eige volum for master og
@@ -115,8 +149,7 @@
           </li>
           <li>
             <strong>MIDI-notar per slag:</strong> Kvar beat kan få tildelt
-            tonehøgde (midi_notes + velocity) for bruk med eksterne synthar
-            eller pitch-vising
+            tonehøgde for bruk med eksterne synthar eller pitch-vising.
           </li>
           <li>
             <strong>EKG/Puls-graf:</strong> Eige panel (G) for visuell rytmisk
@@ -171,25 +204,16 @@
         <h3>Multi‑instans og nettverk</h3>
         <ul>
           <li>
-            Opprette ny instans (@ eller plus‑ikon) med forskyvd plassering og
-            nytt fargetema
+            Kjør så mange metronomer du trenger samtidig med ulike fargetema
           </li>
-          <li>
-            Synkron start/stopp og global mute via multicast (Enter, Shift+M)
-            over lokal gruppe (239.255.0.1:50055)
-          </li>
-          <li>Lokal kontroll (P, M) vs global styring</li>
-          <li>
-            Logging av synk-/statusmelding til ~/Library/Logs/Fot/sync.log for
-            feilsøking
-          </li>
+          <li>Synkron eller individuell start/stopp</li>
         </ul>
 
         <h3>Brukargrensesnitt og visingar</h3>
         <ul>
           <li>
-            Full vs Enkel vising (Z / --simple flagg) for å tilpasse
-            kompleksitet i øvingssituasjonar
+            Full vs Enkel vising (Z) for å tilpasse kompleksitet i
+            øvingssituasjonar
           </li>
           <li>
             Interaktiv sirkulær slag-/underdelingsvising (canvas) med direkte
@@ -221,87 +245,85 @@
           </li>
         </ul>
 
-        <h2 id="seksjoner">Snarvegar</h2>
-        <h3>Transport</h3>
-        <ul>
-          <li>P (Start/Pause lokalt)</li>
-          <li>Enter (Start/Stopp alle)</li>
-          <li>M (Mute)</li>
-          <li>Shift+M (Global mute)</li>
-        </ul>
+        <h2>Naturleg tidsflyt</h2>
+        <p>
+          Metronomen i FOT legg til rette for meir musikalsk og organisk timing
+          enn eit tradisjonelt klikk. I staden for heilt jamne underdelingar kan
+          tidsromma mellom slaga fordelast ujamnt, slik det ofte skjer i levande
+          musikk.
+        </p>
 
-        <h3>Vising/panel</h3>
-        <ul>
-          <li>Z (Enkel/full)</li>
-          <li>W (Lydpanel)</li>
-          <li>K (Klaviatur)</li>
-          <li>G (Puls/EKG)</li>
-          <li>. (Tap tempo)</li>
-          <li>@ (Ny instans)</li>
-        </ul>
+        <h3>Tilpassa rytmikk</h3>
+        <p>
+          Du kan justere fordelinga av tid mellom slaga, slik at rytmen får ei
+          eiga pulsform eller eit "sviv". Dette gjer det mogleg å øve på den
+          praktiske kjensla av groove, ikkje berre teljerytme.
+        </p>
 
-        <h3>Dans/preset</h3>
-        <ul>
-          <li>T (Telespringar)</li>
-          <li>V (Valdresspringar)</li>
-        </ul>
+        <h3>Folkedanspresets</h3>
+        <p>
+          Programmet inneheld ferdige oppsett springartakter, og andre
+          (u)tradisjonelle taktmønster.
+        </p>
 
-        <h3>Tempo/volum</h3>
-        <ul>
-          <li>←/→ (Tempo ned/opp)</li>
-          <li>↑/↓ (Mastervolum opp/ned)</li>
-          <li>Shift+↑/↓ (Underdelingsvolum opp/ned)</li>
-          <li>+/− (Legg til/fjern slag)</li>
-        </ul>
+        <h3>Uavhengige rytmeløp</h3>
+        <p>
+          Fleire metronomar kan køyre samtidig, med eigne mønster, men
+          synkronisert start og stopp. Det gjer det mogleg å arbeide med
+          samspel, polyrytmar og flerlags rytmikk - og nytte ulike lydar per
+          metronom ved midi sends.
+        </p>
 
-        <h2>Unik verdi vs tradisjonell metronom</h2>
-        <ul>
-          <li>
-            Intern prosentdistribusjon gir modellering av ujamn tidsdeling
-            (dans/groove) i staden for jamne underdelingar
-          </li>
-          <li>
-            Beat‑spesifikke underdelingar gjev polymorf intern rytmikk utan å
-            skifte global taktart
-          </li>
-          <li>
-            Kulturspesifikke folkedanspresets (springar) innebygd med snarvegar
-          </li>
-          <li>Multi‑instans styring med synkron kommando (lokal + global)</li>
-          <li>
-            MIDI‑toner per slag + grafisk puls/"EKG" framstilling for både lyd
-            og visuell koppeling
-          </li>
-          <li>
-            Tapteller med analytisk tilbakerapportering (prosent per slag, CPM)
-            for objektiv evaluering av "feel"
-          </li>
-        </ul>
+        <h3>Visuell pulsvising</h3>
+        <p>
+          Kvart slag kan koplast til lyd, tone eller visuell puls. Ei grafisk
+          framstilling – liknande eit EKG – viser rytmen som ei kontinuerleg
+          linje i rørsle, slik at du både ser og høyrer utviklinga.
+        </p>
+
+        <h3>Måling og tilbakemelding</h3>
+        <p>
+          Metronomen kan loggføre korleis tidsbruken fordeler seg mellom slaga.
+          Dette gjev eit nøkternt grunnlag for å analysere stabilitet, presisjon
+          og personleg rytmefølelse.
+        </p>
 
         <p>
           <em>
-            FOT er utvikla av Hans Martin Rundberg Austestad (2025). Prosjektet
-            er merka som "fri metronom" og inviterer til vidare forbetring for
-            eit friare metronomliv.
+            FOT er utvikla av Hans Martin Rundberg Austestad (2025) og inviterer
+            til vidare forbetring for ein friare måte å øve på og jobbe med
+            rytmar.
           </em>
         </p>
       </section>
 
       <section id="en-content" class="hidden">
         <h1>About Fot<img src="foticon.png" alt="Fot icon" /></h1>
+        <p
+          style="
+            font-size: 20px;
+            font-weight: 500;
+            color: var(--accent);
+            margin-bottom: 24px;
+          "
+        >
+          Master elastic rhythm and asymmetric time signatures with living
+          microtiming.
+        </p>
         <p>
-          FOT (Folktronome / "free metronome") is a rhythm and timing tool that
-          makes the metronome elastic and culturally specific. Instead of just
-          BPM and even beats, FOT works with cycles ("measures") where each
-          individual beat can have its own time percentage, subdivision
-          structure, weight (velocity), and pitch (MIDI note). You can shape
-          internal micro-shifts and accents as they actually occur in
-          traditional dances and living "human" grooves – e.g., Telespringar and
-          Valdresspringar – or create entirely custom asymmetric pulse circles.
-          The app supports multiple simultaneous instances that can be
-          started/stopped synchronously via multicast, and provides a visual,
-          interactive "beat card" interface for precise yet free rhythmic
-          modeling.
+          FOT is a rhythm and timing tool that handles elastic rhythms,
+          asymmetric time signatures, and microtiming. It can be used alone with
+          metronome click sounds, but it is especially powerful when used with
+          MIDI sends. Instead of just BPM and even beats, FOT works with cycles
+          ("measures") where each individual beat can have its own time
+          percentage, subdivision structure, weight (velocity), and pitch (MIDI
+          note). You can shape internal micro-shifts and accents as they
+          actually occur in traditional dances and folk music expressions –
+          e.g., Norwegian Telespringar and Valdresspringar – or create entirely
+          custom asymmetric pulse circles with many beats. The app supports
+          multiple simultaneous instances that can be started/stopped
+          synchronously via multicast, and provides a visual, interactive "beat
+          card" interface for precise yet free rhythmic modeling.
         </p>
         <img src="fot1.png" alt="Screenshot of Fot app" class="screenshot" />
         <p class="caption">Image from main window</p>
@@ -310,38 +332,46 @@
         <ul>
           <li>
             <strong>Performers:</strong> Practice dance and folk music rhythms
-            with uneven internal microstructure; train timing consistency and
-            accent placement
+            with uneven internal microstructure; or freely constructed rhythmic
+            loops; train timing consistency and accent placement. Practice
+            polyrhythmic patterns both metric and asymmetric. Use the metronome
+            and sequencer as rhythmic foundation for live performance, and blend
+            acoustic expressions with an electronic domain
           </li>
           <li>
             <strong>Composers/Arrangers:</strong> Build polymetric or asymmetric
             time signatures by adjusting percentage distribution and
-            subdivisions per beat; export for further use
+            subdivisions per beat; record what you create in your DAW, or export
+            MIDI for further use in notation software
           </li>
           <li>
             <strong>Folk Music Educators:</strong> Demonstrate how springar
             rhythms and other traditional patterns deviate from even quarter
-            pulse; visualize percentage distribution and "feel"
+            pulse; visualize percentage distribution and gain access to concrete
+            explanations of the unique characteristics of different time
+            patterns
           </li>
           <li>
             <strong>Improvisers:</strong> Create flexible time frames where core
             pulse can vary organically, and test alternative internal
-            proportions in real-time
+            proportions in real-time. Create extreme rhythmic landscapes that
+            can live freely or sync together
           </li>
           <li>
             <strong>Researchers/Analysts:</strong> Collect structured timing
             data (cycles per minute, average measure time, percentage per beat)
-            for later statistical analysis
+            for analysis, and demonstrate differences in various performance
+            practices, epochs, or styles
           </li>
           <li>
-            <strong>Ensemble / Dance Practice:</strong> Distribute synchronous
-            start/stop and mute to multiple instances in the room; adjust pulse
-            and accents live as needed
+            <strong>Ensemble / Dance Practice:</strong> Play and/or dance to
+            different metronome instances, and find new ways to interact through
+            hidden rhythmic structures
           </li>
           <li>
             <strong>Teaching Rhythmic Precision:</strong> Show interactively how
             changing percentages, subdivisions, and weight affects groove
-            experience
+            experience and microtiming
           </li>
         </ul>
 
@@ -355,16 +385,18 @@
           <li>
             <strong>Percentage distribution per beat:</strong> Each beat within
             the cycle can get a portion of total measure time (average
-            percentage) → modeling uneven internal structure
+            percentage) → modeling uneven internal structure. Drag the pie
+            pieces on the metronome wheel to adjust, and click on the pie pieces
+            to change subdivisions
           </li>
           <li>
             <strong>Beat cards:</strong> Visual modular "cards" for beats with
-            slider (weight/percentage), subdivision counter, and MIDI parameters
+            slider (weight/percentage), subdivision counter, and MIDI
+            parameters. Enter values directly or drag and drop in the sliders
           </li>
           <li>
             <strong>Subdivision per beat:</strong> Independent control of
-            subdivisions (triplets, asymmetry, multiples) per individual beat
-            via click (left +1, right −1, Alt *2)
+            subdivisions (up to 16 per beat) for individual beats
           </li>
           <li>
             <strong>Weight and sound:</strong> Separate volume for master and
@@ -372,8 +404,7 @@
           </li>
           <li>
             <strong>MIDI notes per beat:</strong> Each beat can be assigned
-            pitch (midi_notes + velocity) for use with external synths or pitch
-            display
+            pitch for use with external synths or pitch display
           </li>
           <li>
             <strong>EKG/Pulse graph:</strong> Dedicated panel (G) for visual
@@ -427,25 +458,16 @@
         <h3>Multi-Instance and Network</h3>
         <ul>
           <li>
-            Create new instance (@ or plus icon) with offset placement and new
-            color theme
+            Run as many metronomes as you need simultaneously with different
+            color themes
           </li>
-          <li>
-            Synchronous start/stop and global mute via multicast (Enter,
-            Shift+M) over local group (239.255.0.1:50055)
-          </li>
-          <li>Local control (P, M) vs global control</li>
-          <li>
-            Logging of sync/status messages to ~/Library/Logs/Fot/sync.log for
-            debugging
-          </li>
+          <li>Synchronous or individual start/stop</li>
         </ul>
 
         <h3>User Interface and Displays</h3>
         <ul>
           <li>
-            Full vs Simple view (Z / --simple flag) to adjust complexity in
-            practice situations
+            Full vs Simple view (Z) to adjust complexity in practice situations
           </li>
           <li>
             Interactive circular beat/subdivision display (canvas) with direct
@@ -478,65 +500,48 @@
           </li>
         </ul>
 
-        <h2 id="sections">Shortcuts</h2>
-        <h3>Transport</h3>
-        <ul>
-          <li>P (Start/Pause locally)</li>
-          <li>Enter (Start/Stop all)</li>
-          <li>M (Mute)</li>
-          <li>Shift+M (Global mute)</li>
-        </ul>
+        <h2>Natural Time Flow</h2>
+        <p>
+          The metronome in FOT facilitates more musical and organic timing than
+          a traditional click. Instead of completely even subdivisions, the time
+          intervals between beats can be distributed unevenly, as often occurs
+          in living music.
+        </p>
 
-        <h3>View/Panel</h3>
-        <ul>
-          <li>Z (Simple/Full)</li>
-          <li>W (Sound panel)</li>
-          <li>K (Keyboard)</li>
-          <li>G (Pulse/EKG)</li>
-          <li>. (Tap tempo)</li>
-          <li>@ (New instance)</li>
-        </ul>
+        <h3>Customized Rhythm</h3>
+        <p>
+          You can adjust the distribution of time between beats, so that the
+          rhythm gets its own pulse form or "swing". This makes it possible to
+          practice the practical feel of groove, not just counting rhythm.
+        </p>
 
-        <h3>Dance/Preset</h3>
-        <ul>
-          <li>T (Telespringar)</li>
-          <li>V (Valdresspringar)</li>
-        </ul>
+        <h3>Folk Dance Presets</h3>
+        <p>
+          The program contains ready-made setups for springar measures and other
+          (non-)traditional time patterns.
+        </p>
 
-        <h3>Tempo/Volume</h3>
-        <ul>
-          <li>←/→ (Tempo down/up)</li>
-          <li>↑/↓ (Master volume up/down)</li>
-          <li>Shift+↑/↓ (Subdivision volume up/down)</li>
-          <li>+/− (Add/remove beat)</li>
-        </ul>
+        <h3>Independent Rhythm Streams</h3>
+        <p>
+          Multiple metronomes can run simultaneously, with their own patterns,
+          but synchronized start and stop. This makes it possible to work with
+          interplay, polyrhythms, and multi-layered rhythm – and use different
+          sounds per metronome via MIDI sends.
+        </p>
 
-        <h2>Unique Value vs Traditional Metronome</h2>
-        <ul>
-          <li>
-            Internal percentage distribution enables modeling of uneven time
-            division (dance/groove) instead of even subdivisions
-          </li>
-          <li>
-            Beat-specific subdivisions provide polymorphic internal rhythm
-            without changing global time signature
-          </li>
-          <li>
-            Culture-specific folk dance presets (springar) built-in with
-            shortcuts
-          </li>
-          <li>
-            Multi-instance control with synchronous command (local + global)
-          </li>
-          <li>
-            MIDI tones per beat + graphical pulse/"EKG" representation for both
-            sound and visual coupling
-          </li>
-          <li>
-            Measure tapper with analytical feedback (percentage per beat, CPM)
-            for objective evaluation of "feel"
-          </li>
-        </ul>
+        <h3>Visual Pulse Display</h3>
+        <p>
+          Each beat can be connected to sound, tone, or visual pulse. A
+          graphical representation – similar to an EKG – shows the rhythm as a
+          continuous line in motion, so you both see and hear the development.
+        </p>
+
+        <h3>Measurement and Feedback</h3>
+        <p>
+          The metronome can log how time usage is distributed between beats.
+          This provides an objective basis for analyzing stability, precision,
+          and personal rhythmic feel.
+        </p>
 
         <p>
           <em>
