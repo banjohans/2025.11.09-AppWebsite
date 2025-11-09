@@ -1,0 +1,45 @@
+/* Fot-spesifikke farger og styling */
+
+:root {
+  --bg: #1a0f0f;
+  --panel: #291818;
+  --text: #f5e8e0;
+  --brand: #d47474;
+  --brand-2: #c15b4f;
+  --accent: #e88b87;
+  --border: #4a3030;
+  --button-text: #c9ada0;
+  --caption-text: #a08076;
+  --footer-text: #a08076;
+  --nav-hover-bg: rgba(212, 116, 116, 0.15);
+  --ring: 0 0 0 2px rgba(212, 116, 116, 0.35);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+header {
+  background: var(--panel);
+}
+
+.lang-switch button {
+  color: var(--button-text);
+}
+
+.lang-switch button.active {
+  color: var(--bg);
+}
+
+.caption {
+  color: var(--caption-text);
+}
+
+footer {
+  background: var(--panel);
+}
+
+footer p {
+  color: var(--footer-text);
+}

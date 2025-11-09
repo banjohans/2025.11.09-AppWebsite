@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Svev – MIDI‑prosessor for mikrotuning</title>
+    <link rel="icon" type="image/png" href="icon.png" />
+    <link rel="stylesheet" href="shared/layout.css" />
+    <link rel="stylesheet" href="svev/svev-theme.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="icon.png" alt="Svev app‑ikon" />
+        <span>Svev</span>
+      </div>
+      <nav id="nav-nb" class="nav-menu">
+        <a href="#bruksomrade">Bruksområde</a>
+        <a href="#funksjonar">Funksjonar</a>
+        <a href="#auto-temperering">Auto-temperering</a>
+      </nav>
+      <nav id="nav-en" class="nav-menu hidden">
+        <a href="#applications">Applications</a>
+        <a href="#features">Features</a>
+        <a href="#auto-tempering">Auto-tempering</a>
+      </nav>
+      <div class="lang-switch">
+        <button id="btn-nb" class="active">Norsk</button>
+        <button id="btn-en">English</button>
+      </div>
+    </header>
+    <main>
+      <section id="nb-content">
+        <h1>Om Svev<img src="icon.png" alt="Svev ikon" /></h1>
+        <p>
+          Svev er ein sanntidsapplikasjon for dynamisk mikrotuning basert på
+          MIDI Polyphonic Expression (MPE). Programmet fungerer som ein
+          MIDI‑prosessor som tek imot signal frå til dømes eit klaviatur,
+          justerer intonasjonen i sanntid etter vala du gjer i appen, og sender
+          det justerte signalet vidare til lydproduserande programvare. Kvar
+          tone kan justerast individuelt, og du kan velje mellom
+          auto‑tuning‑modusar, historiske tempereringar eller eigendefinerte
+          stemmesystem. For at mikrotuninga skal fungere som tiltenkt, må
+          mottakarsystemet støtte MPE‑formatet (innført i 2018). Fleire DAW‑ar,
+          som Logic og Ableton Live, har innebygde instrument som støttar dette,
+          i tillegg til ei rekkje nye VST‑synthar.
+        </p>
+        <img
+          src="Screenshot.png"
+          alt="Skjermbilde av Svev-appen"
+          class="screenshot"
+        />
+        <p class="caption">Bilde frå hovedvindu</p>
+        <h2 id="bruksomrade">Bruksområde</h2>
+        <ul>
+          <li>
+            <strong>Utøvarar:</strong> Svev fungerer som eit hørselsutviklande
+            reiskap ...
+          </li>
+          <li>
+            <strong>Komponistar:</strong> Opnar for komposisjon i fleksible og
+            levande tonesystem ...
+          </li>
+          <li>
+            <strong>Pedagogar:</strong> Gjer undervisning i intonasjon og
+            akustikk konkret og interaktiv ...
+          </li>
+          <li>
+            <strong>Forskarar:</strong> Eit elastisk og presist verktøy ...
+          </li>
+          <li>
+            <strong>Institusjonar:</strong> Tverrfagleg læringsverktøy ...
+          </li>
+        </ul>
+        <h2 id="funksjonar">Funksjonar og verktøy</h2>
+        <h3>Grunnleggjande funksjonar</h3>
+        <ul>
+          <li>
+            Appen har visning på nynorsk og engelsk, med valfritt språk i
+            innstillingar
+          </li>
+          <li>
+            Full støtte for MIDI Polyphonic Expression (MPE) for individuell
+            justering av kvar tone
+          </li>
+          <li>
+            Auto-tuning-modusar: Groven Auto-Tuning og Konsonans, begge basert
+            på sanntids harmonisk analyse
+          </li>
+          <li>
+            Støtte for over 100 historiske, sjangerspesifikke tempereringar
+          </li>
+          <li>Støtte for å arbeide med eigendefinerte tempereringar</li>
+          <li>
+            Flux-system som jamnar ut overgongar mellom intonasjonsmål for
+            naturlege klangskift
+          </li>
+        </ul>
+        <h3>Verktøy for styring og tilpassing</h3>
+        <ul>
+          <li>
+            System for å tilordne hurtigtastar til eigne intonasjonsoppsett via
+            MIDI-kontroller
+          </li>
+          <li>
+            Presist stemmeapparat for stemming av instrument etter vald
+            kammertone, temperering og frekvens
+          </li>
+          <li>
+            Grafisk analysator som lyttar til tonehøgder frå ein vald mikrofon
+            og framstiller dei opp mot vald temperering
+          </li>
+          <li>
+            To analysemetodar for å definere tempereringar basert på anten
+            lydfiler eller tonehøgder registrerte via mikrofon, og importere
+            desse til tempereringssystemet
+          </li>
+          <li>
+            Preset-system for lagring og gjenbruk av eigne tempereringar, tonika
+            og innstillingar
+          </li>
+        </ul>
+        <h3>Analyse og visualisering</h3>
+        <ul>
+          <li>Tuner-vindauge som viser avvik i cent og sanntids klangkurve</li>
+          <li>Tone-trace-graf som visualiserer variasjonar i pitch over tid</li>
+          <li>
+            Frekvensanalyse som kan nyttast for forsking og undervisning i klang
+            og intonasjon
+          </li>
+        </ul>
+        <h3>Integrasjon og arbeidsflyt</h3>
+        <ul>
+          <li>
+            Installerast som frittståande program og nyttast som mellomledd
+            mellom MIDI-kjelde og DAW, VST synth og/eller hardware synth
+          </li>
+          <li>
+            MPE-utsending påkrevd til mjukvaresynthar, VST-instrument og
+            eksterne einingar med MPE støtte
+          </li>
+          <li>Universell MIDI-filtermodus (utan krav til plugin-format)</li>
+          <li>Støtte for eksterne lydkort og mikrofonar</li>
+        </ul>
+        <img
+          src="Screenshot2.png"
+          alt="Skjermbilde av Svev-appen"
+          class="screenshot"
+        />
+        <p class="caption">Bilde frå tuner</p>
+        <img
+          src="Screenshot3.png"
+          alt="Skjermbilde av Groven-modus"
+          class="screenshot"
+        />
+        <p class="caption">Bilde frå Groven-modus</p>
+        <h2 id="auto-temperering">Auto-temperering</h2>
+        <p>
+          Med appen følgjer det 3 ulike auto-tempereringsmodusar. Grovens
+          Renstemmings automaton, basert på komponist Eivind Groven sitt arbeid
+          med renstemming. Samt Mild og Streng konsonans, som er appens utviklar
+          Hans Martin Rundberg Austestad sine eigne algoritmar for fleksibel
+          auto-temperering.
+        </p>
+        <p>
+          <em
+            >Svev er utvikla av musikar og musikkpedagog Hans Martin Rundberg
+            Austestad (2025). Programmet gjev musikarar, komponistar og
+            forskarar eit presist og intuitivt reiskap for å utforske harmoniske
+            kontekstar og stemmingar – frå reint naturtonebasert til historisk
+            temperert og vidare til fritt eksperimentell intonasjon.</em
+          >
+        </p>
+      </section>
+
+      <section id="en-content" class="hidden">
+        <h1>About Svev<img src="icon.png" alt="Svev icon" /></h1>
+        <p>
+          Svev is a real‑time application for dynamic microtuning based on MIDI
+          Polyphonic Expression (MPE). The program functions as a MIDI processor
+          that receives signals from, for example, a keyboard, adjusts the
+          intonation in real‑time according to your choices in the app, and
+          sends the adjusted signal to sound‑producing software. Each note can
+          be adjusted individually, and you can choose between auto‑tuning
+          modes, historical temperaments, or custom tuning systems. For
+          microtuning to work as intended, the receiver system must support the
+          MPE format (introduced in 2018). Several DAWs, such as Logic and
+          Ableton Live, have built‑in instruments that support this, in addition
+          to a range of new VST synthesizers.
+        </p>
+        <img
+          src="Screenshot.png"
+          alt="Screenshot of Svev app"
+          class="screenshot"
+        />
+        <p class="caption">Image from main window</p>
+        <h2 id="applications">Applications</h2>
+        <ul>
+          <li>
+            <strong>Performers:</strong> Svev functions as an ear‑training tool
+            ...
+          </li>
+          <li>
+            <strong>Composers:</strong> Opens up composition in flexible and
+            living tuning systems ...
+          </li>
+          <li>
+            <strong>Educators:</strong> Makes teaching intonation and acoustics
+            concrete and interactive ...
+          </li>
+          <li><strong>Researchers:</strong> A flexible and precise tool ...</li>
+          <li>
+            <strong>Institutions:</strong> Interdisciplinary learning tool ...
+          </li>
+        </ul>
+        <h2 id="features">Features and Tools</h2>
+        <h3>Core Features</h3>
+        <ul>
+          <li>
+            The app has interface in Norwegian Nynorsk and English, with
+            language selection in settings
+          </li>
+          <li>
+            Full support for MIDI Polyphonic Expression (MPE) for individual
+            adjustment of each note
+          </li>
+          <li>
+            Auto-tuning modes: Groven Auto-Tuning and Consonance, both based on
+            real-time harmonic analysis
+          </li>
+          <li>Support for over 100 historical, genre-specific temperaments</li>
+          <li>Support for working with custom-defined temperaments</li>
+          <li>
+            Flux system that smooths transitions between intonation targets for
+            natural timbre shifts
+          </li>
+        </ul>
+        <h3>Control and Customization Tools</h3>
+        <ul>
+          <li>
+            System for assigning hotkeys to custom intonation setups via MIDI
+            controller
+          </li>
+          <li>
+            Precise tuner for tuning instruments to selected concert pitch,
+            temperament, and frequency
+          </li>
+          <li>
+            Graphical analyzer that listens to pitches from a selected
+            microphone and displays them against the selected temperament
+          </li>
+          <li>
+            Two analysis methods for defining temperaments based on either audio
+            files or pitches recorded via microphone, and importing these into
+            the temperament system
+          </li>
+          <li>
+            Preset system for saving and reusing custom temperaments, tonics,
+            and settings
+          </li>
+        </ul>
+        <h3>Analysis and Visualization</h3>
+        <ul>
+          <li>
+            Tuner window showing deviation in cents and real-time timbre curve
+          </li>
+          <li>Tone-trace graph visualizing pitch variations over time</li>
+          <li>
+            Frequency analysis that can be used for research and teaching in
+            timbre and intonation
+          </li>
+        </ul>
+        <h3>Integration and Workflow</h3>
+        <ul>
+          <li>
+            Installed as standalone program and used as intermediary between
+            MIDI source and DAW, VST synth and/or hardware synth
+          </li>
+          <li>
+            MPE output required for software synthesizers, VST instruments, and
+            external units with MPE support
+          </li>
+          <li>
+            Universal MIDI filter mode (without plugin format requirement)
+          </li>
+          <li>Support for external audio interfaces and microphones</li>
+        </ul>
+        <img
+          src="Screenshot2.png"
+          alt="Screenshot of Svev app"
+          class="screenshot"
+        />
+        <p class="caption">Image from tuner</p>
+        <img
+          src="Screenshot3.png"
+          alt="Screenshot of Groven mode"
+          class="screenshot"
+        />
+        <p class="caption">Image from Groven mode</p>
+        <h2 id="auto-tempering">Auto-tempering</h2>
+        <p>
+          The app includes 3 different auto-tempering modes. 1) Groven's Pure
+          Tuning automaton, based on composer Eivind Groven's work with pure
+          tuning. As well as Mild and Strict consonance, which are the app
+          developer Hans Martin Rundberg Austestad's own algorithms for flexible
+          auto-tempering.
+        </p>
+        <p>
+          <em
+            >Svev is a living microtuning system developed by musician and music
+            educator Hans Martin Rundberg Austestad (2025). The program gives
+            musicians, composers, and researchers a precise and intuitive tool
+            for exploring how notes actually relate to each other in different
+            harmonic contexts – from purely natural overtone‑based to
+            historically tempered and further to freely experimental
+            intonation.</em
+          >
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Austestad. All rights reserved.</p>
+    </footer>
+
+    <script src="shared/language.js"></script>
+    <script>
+      initLanguageSwitch(
+        { nb: "nb-content", en: "en-content" },
+        { nb: "nav-nb", en: "nav-en" }
+      );
+    </script>
+  </body>
+</html>

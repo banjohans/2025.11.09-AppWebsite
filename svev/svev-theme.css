@@ -1,0 +1,45 @@
+/* Svev-spesifikke farger og styling */
+
+:root {
+  --bg: #1a1410;
+  --panel: #2a1f1a;
+  --text: #f5ebe0;
+  --brand: #d4a574;
+  --brand-2: #c17a4f;
+  --accent: #e8b487;
+  --border: #4a3830;
+  --button-text: #c9b5a0;
+  --caption-text: #a08876;
+  --footer-text: #a08876;
+  --nav-hover-bg: rgba(212, 165, 116, 0.15);
+  --ring: 0 0 0 2px rgba(212, 165, 116, 0.35);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+header {
+  background: var(--panel);
+}
+
+.lang-switch button {
+  color: var(--button-text);
+}
+
+.lang-switch button.active {
+  color: var(--bg);
+}
+
+.caption {
+  color: var(--caption-text);
+}
+
+footer {
+  background: var(--panel);
+}
+
+footer p {
+  color: var(--footer-text);
+}

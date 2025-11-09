@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fot – [Beskrivelse av Fot-appen]</title>
+    <link rel="icon" type="image/png" href="foticon.png" />
+    <link rel="stylesheet" href="../shared/layout.css" />
+    <link rel="stylesheet" href="fot-theme.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="foticon.png" alt="Fot app‑ikon" />
+        <span>Fot</span>
+      </div>
+      <nav id="nav-nb" class="nav-menu">
+        <a href="#bruksomrade">Bruksområde</a>
+        <a href="#funksjonar">Funksjonar</a>
+        <a href="#seksjoner">Seksjoner</a>
+      </nav>
+      <nav id="nav-en" class="nav-menu hidden">
+        <a href="#applications">Applications</a>
+        <a href="#features">Features</a>
+        <a href="#sections">Sections</a>
+      </nav>
+      <div class="lang-switch">
+        <button id="btn-nb" class="active">Norsk</button>
+        <button id="btn-en">English</button>
+      </div>
+    </header>
+    <main>
+      <section id="nb-content">
+        <h1>Om Fot<img src="foticon.png" alt="Fot ikon" /></h1>
+        <p>
+          FOT (Folktronome / "fri metronom") er eit rytme- og tidsverktøy som
+          gjer metronomen elastisk og kulturspesifikk. I staden for berre BPM og
+          jamne slag arbeider FOT med syklusar ("takter") der kvar einskild beat
+          kan få sin eigen tidsprosent, underdelingsstruktur, tyngd (velocity)
+          og tone (MIDI‑note). Du kan forme interne mikro‑forskyvingar og
+          aksentar slik dei faktisk er i tradisjonelle dansar og i levande
+          "human" groove – t.d. Telespringar og Valdresspringar – eller lage
+          heilt eigne asymmetriske pulssirklar. Appen støttar fleire samtidige
+          instansar som kan startast/stoppast synkront via multicast, og gjev
+          eit visuelt, interaktivt "slagkort"-grensesnitt for presis men fri
+          rytmisk modellering.
+        </p>
+        <img src="fot1.png" alt="Skjermbilde av Fot-appen" class="screenshot" />
+        <p class="caption">Bilde frå hovedvindu</p>
+
+        <h2 id="bruksomrade">Bruksområde</h2>
+        <ul>
+          <li>
+            <strong>Utøvarar:</strong> Øv inn dans- og folkemusikkrytmar med
+            ujamn intern mikrostruktur; tren timingkonsistens og
+            aksentplassering
+          </li>
+          <li>
+            <strong>Komponistar/Arrangørar:</strong> Bygg polymetriske eller
+            asymmetriske taktformer ved å justere prosentfordeling og
+            underdelingar per slag; eksportér til vidare bruk
+          </li>
+          <li>
+            <strong>Folkemusikkpedagogar:</strong> Demonstrer korleis
+            springarrytmar og andre tradisjonelle mønster avvik frå jamn
+            kvartpuls; visualiser prosentfordeling og "feel"
+          </li>
+          <li>
+            <strong>Improvisatørar:</strong> Skap fleksible tidsrammer der
+            kjernepuls kan variere organisk, og test alternative indre
+            proporsjonar i sanntid
+          </li>
+          <li>
+            <strong>Forskarar/Analytikarar:</strong> Samle strukturerte
+            timingdata (takter per minutt, gjennomsnitt takt tid, prosent per
+            slag) for seinare statistisk analyse
+          </li>
+          <li>
+            <strong>Ensemble / Dansepraksis:</strong> Distribuer synkron
+            start/stopp og mute til fleire instansar i rommet; juster puls og
+            aksentar live etter behov
+          </li>
+          <li>
+            <strong>Undervisning i rytmisk presisjon:</strong> Vis interaktivt
+            korleis endring av prosentsatsar, underdelingar og tyngd påverkar
+            grooveoppleving
+          </li>
+        </ul>
+
+        <h2 id="funksjonar">Funksjonar og verktøy</h2>
+        <h3>Grunnleggjande konsept</h3>
+        <ul>
+          <li>
+            <strong>CPM i staden for berre BPM:</strong> "Takter per minutt"
+            (CPM) som syklisk tempoeining i tillegg til klassisk slagfølelse
+          </li>
+          <li>
+            <strong>Prosentfordeling per slag:</strong> Kvar beat inne i
+            syklusen kan få ein del av total takt‑tid (snittprosent) →
+            modellering av ujamn intern struktur
+          </li>
+          <li>
+            <strong>Slagkort (beat cards):</strong> Visuelle modulære "kort" for
+            slag med slider (tyngd / prosent), underdelingstellar, og
+            MIDI‑parametrar
+          </li>
+          <li>
+            <strong>Underdeling per beat:</strong> Uavhengig styring av
+            subdivisjonar (triolar, asymmetri, multiple) per enkelt slag via
+            klikk (venstre +1, høgre −1, Alt *2)
+          </li>
+          <li>
+            <strong>Tyngd og lyd:</strong> Eige volum for master og
+            underdelingar; WAV-basert klikk (click.wav) med lydpanel (W)
+          </li>
+          <li>
+            <strong>MIDI-notar per slag:</strong> Kvar beat kan få tildelt
+            tonehøgde (midi_notes + velocity) for bruk med eksterne synthar
+            eller pitch-vising
+          </li>
+          <li>
+            <strong>EKG/Puls-graf:</strong> Eige panel (G) for visuell rytmisk
+            "puls"/kurve
+          </li>
+          <li>
+            <strong>Klaviaturpanel:</strong> Snarveg (K) for MIDI-toneveljar
+          </li>
+        </ul>
+
+        <h3>Sequencer og tap-tempo</h3>
+        <ul>
+          <li>
+            <strong>Innebygd sequencer:</strong> Ta opp og lagre 9 separate
+            takt‑loops, med høve til å leggje til og forme bassgangar per loop
+          </li>
+          <li>
+            <strong>Presist tap‑tempo:</strong> Fangar nøyaktig sving
+            (mikrotiming) når du spelar inn, slik at den levande "feel‑en" blir
+            ein del av mønsteret
+          </li>
+          <li>
+            <strong>MIDI‑eksport:</strong> Eksportér som MIDI‑map for å flytte
+            swing‑profil og aksentstruktur rett inn i andre DAW‑ar og arbeide
+            vidare med elastisk tidsflyt på tvers av prosjekt og plattformer
+          </li>
+        </ul>
+        <img
+          src="fot2.png"
+          alt="Skjermbilde av Fot sequencer"
+          class="screenshot"
+        />
+        <p class="caption">Bilde frå sequencer</p>
+
+        <h3>Presets og kulturspesifikke rytmar</h3>
+        <ul>
+          <li>
+            <strong>Ferdige folkedansoppsett:</strong> Telespringar (T) og
+            Valdresspringar (V) lastar inn førehandsdefinerte interne
+            proporsjonar og aksentar
+          </li>
+          <li>
+            <strong>Eksport / import av taktpreset:</strong> Lagra syklusdata
+            (metronome_data) og henta dei seinare (Lagre / Importer meny)
+          </li>
+          <li>
+            Lagra takt-strukturar i katalogar (lagratakter, Metronomes) for
+            gjenbruk og deling
+          </li>
+        </ul>
+
+        <h3>Multi‑instans og nettverk</h3>
+        <ul>
+          <li>
+            Opprette ny instans (@ eller plus‑ikon) med forskyvd plassering og
+            nytt fargetema
+          </li>
+          <li>
+            Synkron start/stopp og global mute via multicast (Enter, Shift+M)
+            over lokal gruppe (239.255.0.1:50055)
+          </li>
+          <li>Lokal kontroll (P, M) vs global styring</li>
+          <li>
+            Logging av synk-/statusmelding til ~/Library/Logs/Fot/sync.log for
+            feilsøking
+          </li>
+        </ul>
+
+        <h3>Brukargrensesnitt og visingar</h3>
+        <ul>
+          <li>
+            Full vs Enkel vising (Z / --simple flagg) for å tilpasse
+            kompleksitet i øvingssituasjonar
+          </li>
+          <li>
+            Interaktiv sirkulær slag-/underdelingsvising (canvas) med direkte
+            manipulasjon
+          </li>
+          <li>
+            TaktTeller (tap‑tempo) som eige sidevindauge med datainnsamling av
+            snittprosent, CPM og gjennomsnitt takt tid
+          </li>
+          <li>
+            Fargetema og ikon-sett (play, stop, sound, mute, puls, piano, farge)
+            i transport/toolbar
+          </li>
+          <li>Tooltips med snarvegar</li>
+        </ul>
+
+        <h3>Datainnsamling og analyse</h3>
+        <ul>
+          <li>
+            TaktTeller bereknar prosentfordeling per slag (snittprosent), takter
+            per minutt (CPM) og gjennomsnittleg takt‑tid
+          </li>
+          <li>
+            Intern spegling av sliderverdier og underdelingar for trådtrygg
+            avspeling
+          </li>
+          <li>
+            Kan nyttast til å sjå stabilitet og konsistens i tapping over tid
+          </li>
+        </ul>
+
+        <h2 id="seksjoner">Snarvegar</h2>
+        <h3>Transport</h3>
+        <ul>
+          <li>P (Start/Pause lokalt)</li>
+          <li>Enter (Start/Stopp alle)</li>
+          <li>M (Mute)</li>
+          <li>Shift+M (Global mute)</li>
+        </ul>
+
+        <h3>Vising/panel</h3>
+        <ul>
+          <li>Z (Enkel/full)</li>
+          <li>W (Lydpanel)</li>
+          <li>K (Klaviatur)</li>
+          <li>G (Puls/EKG)</li>
+          <li>. (Tap tempo)</li>
+          <li>@ (Ny instans)</li>
+        </ul>
+
+        <h3>Dans/preset</h3>
+        <ul>
+          <li>T (Telespringar)</li>
+          <li>V (Valdresspringar)</li>
+        </ul>
+
+        <h3>Tempo/volum</h3>
+        <ul>
+          <li>←/→ (Tempo ned/opp)</li>
+          <li>↑/↓ (Mastervolum opp/ned)</li>
+          <li>Shift+↑/↓ (Underdelingsvolum opp/ned)</li>
+          <li>+/− (Legg til/fjern slag)</li>
+        </ul>
+
+        <h2>Unik verdi vs tradisjonell metronom</h2>
+        <ul>
+          <li>
+            Intern prosentdistribusjon gir modellering av ujamn tidsdeling
+            (dans/groove) i staden for jamne underdelingar
+          </li>
+          <li>
+            Beat‑spesifikke underdelingar gjev polymorf intern rytmikk utan å
+            skifte global taktart
+          </li>
+          <li>
+            Kulturspesifikke folkedanspresets (springar) innebygd med snarvegar
+          </li>
+          <li>Multi‑instans styring med synkron kommando (lokal + global)</li>
+          <li>
+            MIDI‑toner per slag + grafisk puls/"EKG" framstilling for både lyd
+            og visuell koppeling
+          </li>
+          <li>
+            Tapteller med analytisk tilbakerapportering (prosent per slag, CPM)
+            for objektiv evaluering av "feel"
+          </li>
+        </ul>
+
+        <p>
+          <em>
+            FOT er utvikla av Hans Martin Rundberg Austestad (2025). Prosjektet
+            er merka som "fri metronom" og inviterer til vidare forbetring for
+            eit friare metronomliv.
+          </em>
+        </p>
+      </section>
+
+      <section id="en-content" class="hidden">
+        <h1>About Fot<img src="foticon.png" alt="Fot icon" /></h1>
+        <p>
+          FOT (Folktronome / "free metronome") is a rhythm and timing tool that
+          makes the metronome elastic and culturally specific. Instead of just
+          BPM and even beats, FOT works with cycles ("measures") where each
+          individual beat can have its own time percentage, subdivision
+          structure, weight (velocity), and pitch (MIDI note). You can shape
+          internal micro-shifts and accents as they actually occur in
+          traditional dances and living "human" grooves – e.g., Telespringar and
+          Valdresspringar – or create entirely custom asymmetric pulse circles.
+          The app supports multiple simultaneous instances that can be
+          started/stopped synchronously via multicast, and provides a visual,
+          interactive "beat card" interface for precise yet free rhythmic
+          modeling.
+        </p>
+        <img src="fot1.png" alt="Screenshot of Fot app" class="screenshot" />
+        <p class="caption">Image from main window</p>
+
+        <h2 id="applications">Applications</h2>
+        <ul>
+          <li>
+            <strong>Performers:</strong> Practice dance and folk music rhythms
+            with uneven internal microstructure; train timing consistency and
+            accent placement
+          </li>
+          <li>
+            <strong>Composers/Arrangers:</strong> Build polymetric or asymmetric
+            time signatures by adjusting percentage distribution and
+            subdivisions per beat; export for further use
+          </li>
+          <li>
+            <strong>Folk Music Educators:</strong> Demonstrate how springar
+            rhythms and other traditional patterns deviate from even quarter
+            pulse; visualize percentage distribution and "feel"
+          </li>
+          <li>
+            <strong>Improvisers:</strong> Create flexible time frames where core
+            pulse can vary organically, and test alternative internal
+            proportions in real-time
+          </li>
+          <li>
+            <strong>Researchers/Analysts:</strong> Collect structured timing
+            data (cycles per minute, average measure time, percentage per beat)
+            for later statistical analysis
+          </li>
+          <li>
+            <strong>Ensemble / Dance Practice:</strong> Distribute synchronous
+            start/stop and mute to multiple instances in the room; adjust pulse
+            and accents live as needed
+          </li>
+          <li>
+            <strong>Teaching Rhythmic Precision:</strong> Show interactively how
+            changing percentages, subdivisions, and weight affects groove
+            experience
+          </li>
+        </ul>
+
+        <h2 id="features">Features and Tools</h2>
+        <h3>Core Concepts</h3>
+        <ul>
+          <li>
+            <strong>CPM instead of just BPM:</strong> "Cycles per minute" (CPM)
+            as cyclic tempo unit in addition to classic beat feel
+          </li>
+          <li>
+            <strong>Percentage distribution per beat:</strong> Each beat within
+            the cycle can get a portion of total measure time (average
+            percentage) → modeling uneven internal structure
+          </li>
+          <li>
+            <strong>Beat cards:</strong> Visual modular "cards" for beats with
+            slider (weight/percentage), subdivision counter, and MIDI parameters
+          </li>
+          <li>
+            <strong>Subdivision per beat:</strong> Independent control of
+            subdivisions (triplets, asymmetry, multiples) per individual beat
+            via click (left +1, right −1, Alt *2)
+          </li>
+          <li>
+            <strong>Weight and sound:</strong> Separate volume for master and
+            subdivisions; WAV-based click (click.wav) with sound panel (W)
+          </li>
+          <li>
+            <strong>MIDI notes per beat:</strong> Each beat can be assigned
+            pitch (midi_notes + velocity) for use with external synths or pitch
+            display
+          </li>
+          <li>
+            <strong>EKG/Pulse graph:</strong> Dedicated panel (G) for visual
+            rhythmic "pulse"/curve
+          </li>
+          <li>
+            <strong>Keyboard panel:</strong> Shortcut (K) for MIDI tone selector
+          </li>
+        </ul>
+
+        <h3>Sequencer and Tap-Tempo</h3>
+        <ul>
+          <li>
+            <strong>Built-in sequencer:</strong> Record and save 9 separate
+            measure loops, with the ability to add and shape bass lines per loop
+          </li>
+          <li>
+            <strong>Precise tap-tempo:</strong> Captures exact swing
+            (microtiming) when recording, so the living "feel" becomes part of
+            the pattern
+          </li>
+          <li>
+            <strong>MIDI export:</strong> Export as MIDI map to transfer swing
+            profile and accent structure directly into other DAWs and work
+            further with highly elastic time flow across projects and platforms
+          </li>
+        </ul>
+        <img
+          src="fot2.png"
+          alt="Screenshot of Fot sequencer"
+          class="screenshot"
+        />
+        <p class="caption">Image from sequencer</p>
+
+        <h3>Presets and Culture-Specific Rhythms</h3>
+        <ul>
+          <li>
+            <strong>Ready-made folk dance setups:</strong> Telespringar (T) and
+            Valdresspringar (V) load predefined internal proportions and accents
+          </li>
+          <li>
+            <strong>Export / import of measure presets:</strong> Save cycle data
+            (metronome_data) and retrieve later (Save / Import menu)
+          </li>
+          <li>
+            Store measure structures in directories (lagratakter, Metronomes)
+            for reuse and sharing
+          </li>
+        </ul>
+
+        <h3>Multi-Instance and Network</h3>
+        <ul>
+          <li>
+            Create new instance (@ or plus icon) with offset placement and new
+            color theme
+          </li>
+          <li>
+            Synchronous start/stop and global mute via multicast (Enter,
+            Shift+M) over local group (239.255.0.1:50055)
+          </li>
+          <li>Local control (P, M) vs global control</li>
+          <li>
+            Logging of sync/status messages to ~/Library/Logs/Fot/sync.log for
+            debugging
+          </li>
+        </ul>
+
+        <h3>User Interface and Displays</h3>
+        <ul>
+          <li>
+            Full vs Simple view (Z / --simple flag) to adjust complexity in
+            practice situations
+          </li>
+          <li>
+            Interactive circular beat/subdivision display (canvas) with direct
+            manipulation
+          </li>
+          <li>
+            MeasureTapper (tap-tempo) as dedicated side window with data
+            collection of average percentage, CPM, and average measure time
+          </li>
+          <li>
+            Color themes and icon sets (play, stop, sound, mute, pulse, piano,
+            color) in transport/toolbar
+          </li>
+          <li>Tooltips with shortcuts</li>
+        </ul>
+
+        <h3>Data Collection and Analysis</h3>
+        <ul>
+          <li>
+            MeasureTapper calculates percentage distribution per beat (average
+            percentage), cycles per minute (CPM), and average measure time
+          </li>
+          <li>
+            Internal mirroring of slider values and subdivisions for thread-safe
+            playback
+          </li>
+          <li>
+            Can be used to monitor stability and consistency in tapping over
+            time
+          </li>
+        </ul>
+
+        <h2 id="sections">Shortcuts</h2>
+        <h3>Transport</h3>
+        <ul>
+          <li>P (Start/Pause locally)</li>
+          <li>Enter (Start/Stop all)</li>
+          <li>M (Mute)</li>
+          <li>Shift+M (Global mute)</li>
+        </ul>
+
+        <h3>View/Panel</h3>
+        <ul>
+          <li>Z (Simple/Full)</li>
+          <li>W (Sound panel)</li>
+          <li>K (Keyboard)</li>
+          <li>G (Pulse/EKG)</li>
+          <li>. (Tap tempo)</li>
+          <li>@ (New instance)</li>
+        </ul>
+
+        <h3>Dance/Preset</h3>
+        <ul>
+          <li>T (Telespringar)</li>
+          <li>V (Valdresspringar)</li>
+        </ul>
+
+        <h3>Tempo/Volume</h3>
+        <ul>
+          <li>←/→ (Tempo down/up)</li>
+          <li>↑/↓ (Master volume up/down)</li>
+          <li>Shift+↑/↓ (Subdivision volume up/down)</li>
+          <li>+/− (Add/remove beat)</li>
+        </ul>
+
+        <h2>Unique Value vs Traditional Metronome</h2>
+        <ul>
+          <li>
+            Internal percentage distribution enables modeling of uneven time
+            division (dance/groove) instead of even subdivisions
+          </li>
+          <li>
+            Beat-specific subdivisions provide polymorphic internal rhythm
+            without changing global time signature
+          </li>
+          <li>
+            Culture-specific folk dance presets (springar) built-in with
+            shortcuts
+          </li>
+          <li>
+            Multi-instance control with synchronous command (local + global)
+          </li>
+          <li>
+            MIDI tones per beat + graphical pulse/"EKG" representation for both
+            sound and visual coupling
+          </li>
+          <li>
+            Measure tapper with analytical feedback (percentage per beat, CPM)
+            for objective evaluation of "feel"
+          </li>
+        </ul>
+
+        <p>
+          <em>
+            FOT is developed by Hans Martin Rundberg Austestad (2025). The
+            project is marked as "free metronome" and invites further
+            improvement for a freer metronome life.
+          </em>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Austestad. All rights reserved.</p>
+    </footer>
+
+    <script src="../shared/language.js"></script>
+    <script>
+      initLanguageSwitch(
+        { nb: "nb-content", en: "en-content" },
+        { nb: "nav-nb", en: "nav-en" }
+      );
+    </script>
+  </body>
+</html>
