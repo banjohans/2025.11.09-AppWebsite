@@ -30,10 +30,7 @@ Dette prosjektet er organisert for å støtte flere app-sider med delt funksjona
 │
 ├── icon.png             # Svev ikon
 ├── Screenshot.png       # Svev screenshots
-├── Screenshot2.png
-├── Screenshot3.png
-├── style.css            # GAMMEL FIL - kan slettes
-└── script.js            # GAMMEL FIL - kan slettes
+└── Screenshot2.png
 ```
 
 ## Hvordan legge til en ny app
@@ -121,11 +118,8 @@ Dette prosjektet er organisert for å støtte flere app-sider med delt funksjona
 
 - Primær: #d47474 (raud/terracotta)
 - Bakgrunn: #1a1410 (mørk brun)
-
-## Opprydding
-
-Følgende gamle filer kan slettes etter migrering:
-
-- `style.css` (erstattet av shared/layout.css + svev/svev-theme.css)
-- `script.js` (erstattet av shared/language.js)
 ````
+
+`````
+````
+`````
