@@ -366,7 +366,7 @@ h3 {
   max-width: 600px;
   height: auto;
   border-radius: 12px;
-  margin: 24px 0 8px 0;
+  margin: 24px auto 8px auto;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   display: block;
 }
@@ -376,6 +376,7 @@ h3 {
   margin-top: 0;
   margin-bottom: 24px;
   font-style: italic;
+  text-align: center;
 }
 
 footer {

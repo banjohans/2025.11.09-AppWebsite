@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sviv – Elastisk metronom</title>
+    <link rel="icon" type="image/png" href="svivicon.png" />
+    <link rel="stylesheet" href="../shared/layout.css" />
+    <link rel="stylesheet" href="sviv-theme.css" />
+  </head>
+  <body>
+    <header>
+      <button id="hamburger" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="header-left">
+        <a id="home-nb" href="../index.html" class="home-link">Heim</a>
+        <a id="home-en" href="../index.html" class="home-link hidden">Home</a>
+        <nav class="app-nav">
+          <a href="../svev/index.html">
+            <img src="../icon.png" alt="Svev" />
+            <span>Svev</span>
+          </a>
+          <a href="index.html" style="opacity: 0.5; cursor: default">
+            <img src="svivicon.png" alt="Sviv" />
+            <span>Sviv</span>
+          </a>
+        </nav>
+      </div>
+      <div class="header-right">
+        <nav id="nav-nb" class="nav-menu">
+          <a href="#bruksomrade">Bruksområde</a>
+          <a href="#funksjonar">Funksjonar</a>
+        </nav>
+        <nav id="nav-en" class="nav-menu hidden">
+          <a href="#applications">Applications</a>
+          <a href="#features">Features</a>
+        </nav>
+        <div class="lang-switch">
+          <button id="btn-nb" class="active">No</button>
+          <button id="btn-en">En</button>
+        </div>
+      </div>
+    </header>
+
+    <div id="mobile-menu" class="mobile-menu">
+      <div class="mobile-menu-content">
+        <div class="mobile-menu-section">
+          <a href="../index.html" class="mobile-menu-link">
+            <span id="mobile-home-nb">🏠 Heim</span>
+            <span id="mobile-home-en" class="hidden">🏠 Home</span>
+          </a>
+        </div>
+
+        <div class="mobile-menu-section">
+          <a href="../svev/index.html" class="mobile-menu-link">
+            <img src="../icon.png" alt="Svev" />
+            <span>Svev</span>
+          </a>
+          <div class="mobile-submenu">
+            <a href="../svev/index.html#bruksomrade">
+              <span id="mobile-svev-uses-nb">Bruksområde</span>
+              <span id="mobile-svev-uses-en" class="hidden">Applications</span>
+            </a>
+            <a href="../svev/index.html#funksjonar">
+              <span id="mobile-svev-features-nb">Funksjonar</span>
+              <span id="mobile-svev-features-en" class="hidden">Features</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="mobile-menu-section">
+          <a href="index.html" class="mobile-menu-link">
+            <img src="svivicon.png" alt="Sviv" />
+            <span>Sviv</span>
+          </a>
+          <div class="mobile-submenu">
+            <div id="mobile-sviv-nav-nb">
+              <a href="#bruksomrade">Bruksområde</a>
+              <a href="#funksjonar">Funksjonar</a>
+            </div>
+            <div id="mobile-sviv-nav-en" class="hidden">
+              <a href="#applications">Applications</a>
+              <a href="#features">Features</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <section id="nb-content">
+        <h1>Om Sviv<img src="svivicon.png" alt="Sviv ikon" /></h1>
+
+        <div
+          style="
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 48px;
+            background: var(--panel);
+            border-radius: 12px;
+            border: 3px solid var(--accent);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+          "
+        >
+          <p
+            style="
+              font-size: clamp(20px, 4vw, 32px);
+              font-weight: 600;
+              color: var(--accent);
+              margin-bottom: 32px;
+              text-align: center;
+              line-height: 1.3;
+            "
+          >
+            Elastisk rytmeverktøy for meir enn berre å halde takta.
+          </p>
+          <p
+            style="
+              text-align: center;
+              font-style: italic;
+              color: var(--text-muted);
+              margin: 0 auto 32px;
+              max-width: 800px;
+              font-size: clamp(14px, 2vw, 16px);
+            "
+          >
+            Fot – rytme, forankring og menneskets tilknyting til tid gjennom
+            rørsle. Omgrepet «få fot» kan bety å verte begeitra for rytme og
+            musikk.
+          </p>
+
+          <h3
+            style="font-size: 22px; margin-bottom: 16px; color: var(--accent)"
+          >
+            Oversikt
+          </h3>
+
+          <p>
+            SVIV er ein elastisk metronom og eit rytmeverktøy designa for
+            musikarar som vil utforske levande rytmar, asymmetriske taktartar og
+            mikroskopiske timing-variasjonar. I staden for eit fast BPM-system
+            arbeider SVIV med flytande syklusar der rytmen kan puste – slik
+            rytmar tross alt er i praksis.
+          </p>
+
+          <p>
+            Appen gir deg innsikt i kva som svingar fordi det går jamt – og kva
+            som svingar nettopp fordi det ikkje gjer det. Med
+            justeringsmuligheter ned til prosentdesimalar finn du svaret på kvar
+            bristepunktet ligg mellom presisjon og groove.
+          </p>
+
+          <p><strong>Når du brukar SVIV, kan du:</strong></p>
+          <ul>
+            <li>
+              Lage dine eigne rytmar med valfri lengd, betoning og underdeling
+            </li>
+            <li>Øve med skakke takter som Pols, Polska og Springar</li>
+            <li>Utforske syklusar der kvart slag kan ha ulik varigheit</li>
+            <li>
+              Køyre fleire instansar samtidig – i sync, eller kvar sitt tempo
+            </li>
+            <li>
+              Bruke den innebygde sequenceren sin "følg" modus til å spele
+              presise basslinjer over rytmen metronomen er innstilt på
+            </li>
+            <li>
+              Bruke den innebygde sequenceren til å ta opp og lage kø av
+              komplekse rytmesekvensar og bassgangar
+            </li>
+          </ul>
+
+          <p><strong>Bruk som:</strong></p>
+          <ul>
+            <li>Frittståande assymmetrisk metronom</li>
+            <li>
+              MIDI-beatmaskin og sequencer som du sender hardware og software,
+              til eksterne synthar og DAWs
+            </li>
+          </ul>
+
+          <video autoplay loop muted playsinline class="screenshot">
+            <source src="svivsnutt1.mp4" type="video/mp4" />
+            Din nettlesar støttar ikkje video.
+          </video>
+          <p class="caption">Demo frå hovedvindu</p>
+        </div>
+
+        <div
+          style="
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 32px;
+            background: var(--panel);
+            border-radius: 12px;
+          "
+        >
+          <h2
+            id="bruksomrade"
+            style="
+              font-size: 36px;
+              margin-bottom: 32px;
+              text-align: center;
+              color: var(--text);
+            "
+          >
+            Bruksområde
+          </h2>
+
+          <div style="margin-bottom: 40px">
+            <h3
+              style="
+                color: var(--accent);
+                font-size: 26px;
+                margin-bottom: 16px;
+                padding-bottom: 12px;
+                border-bottom: 2px solid var(--border);
+              "
+            >
+              Utøvarar
+            </h3>
+            <p>
+              Utøvarar kan bruke FOT til å utforske mikrostrukturar i rytme og
+              lære seg korleis ein kan dra i enkelte taktslag for å skape liv i
+              grooven.
+            </p>
+            <p>
+              Appen gjer det enkelt å arbeide med assymetriske taktartar – som i
+              Pols, Polska, Valdres- og Telespringar – og andre levande
+              folkedansformer.
+            </p>
+            <p>
+              Med den innebygde sequenceren kan du forme nøyaktige rytmeforløp
+              for øving, eksperimentere med transformasjonar frå
+              referanserytmar, og trene på både polyrytmar og ulike måtar å
+              oppfatte sving på.
+            </p>
+            <p>
+              Sequencerfunksjonen gjer det òg mogleg å programmere bassganger og
+              lage låtløp, slik at metronomen kan nyttast både i komponering,
+              øving og liveframføringar.
+            </p>
+          </div>
+
+          <div style="margin-bottom: 40px">
+            <h3
+              style="
+                color: var(--accent);
+                font-size: 26px;
+                margin-bottom: 16px;
+                padding-bottom: 12px;
+                border-bottom: 2px solid var(--border);
+              "
+            >
+              Ensemble / Samspel / Dans
+            </h3>
+            <p>
+              FOT kan køyre fleire metronomar samtidig og sende signal til ulike
+              MIDI-utgangar, kvar med sitt rytmiske mønster eller tempo. Dette
+              gjer det mogleg å programmere alt frå basslinjer og trommelydar
+              til komplekse polyrytmar og samspel mellom ulike tidsnivå.
+            </p>
+            <p>
+              Sidan appen kan sende midi inn til DAW-ar, er det enkelt å route
+              kvar metronom til separate kanalar. Slik vil det være lett å sende
+              metronomane til kvart sitt headsett, trådlause in-ear system,
+              monitorar, eller andre lydutgangar.
+            </p>
+            <p>
+              Appen kombinerer lyd og visuelle indikatorar, slik at du kan
+              samhandle både med og utan lyd. Slik opnar FOT for kreative
+              bruksområde som endå ikkje er utforska – eit verktøy for dei som
+              vil utfordre grensene for rytme og samspel.
+            </p>
+          </div>
+
+          <div style="margin-bottom: 40px">
+            <h3
+              style="
+                color: var(--accent);
+                font-size: 26px;
+                margin-bottom: 16px;
+                padding-bottom: 12px;
+                border-bottom: 2px solid var(--border);
+              "
+            >
+              Improvisatørar
+            </h3>
+            <p>
+              For deg som jobbar med improvisasjon, er FOT eit verktøy for å
+              skape fleksible og organiske tidsrammer. Du kan byggje mønster der
+              kjernepuls kan variere fritt, eller teste alternative indre
+              proporsjonar i sanntid. Du kan også setje ein person til å styre,
+              variere, og spele på metronomane.
+            </p>
+            <p>
+              Med FOT kan ein også lage ekstreme rytmiske landskap med mange
+              asymmetriske underdelte slag i sakte og raskt tempo. Kombinert med
+              sequencer med MIDI følgefunksjon for å spele på keyboard, er det
+              lett å skape vanvittige og kaotiske lyder saman med VST
+              biblioteket du f.eks. har i din DAW.
+            </p>
+            <video autoplay loop muted playsinline class="screenshot">
+              <source src="ekstrem1.mp4" type="video/mp4" />
+              Din nettlesar støttar ikkje video.
+            </video>
+            <p class="caption">Demo av ein omfattande rytmisk sekvens</p>
+          </div>
+
+          <div style="margin-bottom: 40px">
+            <h3
+              style="
+                color: var(--accent);
+                font-size: 26px;
+                margin-bottom: 16px;
+                padding-bottom: 12px;
+                border-bottom: 2px solid var(--border);
+              "
+            >
+              Komponistar og arrangørar
+            </h3>
+            <p>
+              FOT lar deg byggje polymetriske og asymmetriske taktformer ved å
+              justere prosentfordeling, underdelingar og lengda på kvart slag.
+              Du kan skape komplekse rytmesekvensar, utforske mikroskopiske
+              tidsforskyvingar, og forme groover som ligg utanfor det
+              standardiserte rutenettet i ein DAW.
+            </p>
+            <p>
+              Når du er nøgd med resultatet, kan du eksportere MIDI-data direkte
+              til produksjonsmiljøet ditt eller overføre det til eit
+              noteskrivingsprogram for transkripsjon og arrangering. Slik
+              fungerer FOT som eit komposisjonsverktøy som byggjer bru mellom
+              levande rytmisk uttrykk og digital produksjon.
+            </p>
+            <p>
+              FOT kan òg brukast til å analysere eksisterande musikk: Tapp inn
+              rytmen frå eit opptak, og programmet vil berekne mikrotiming, CPM
+              og prosentfordeling – slik at du utan problem kan rekonstruere
+              tempo og slaga til rubato musikk, full av fermater. Ideelt om du
+              skal transkribere musikk som har fri timing - eller jobbe med
+              arrangement og scoring til ein demo som "ikkje tok dette med tempo
+              så nøye".
+            </p>
+          </div>
+
+          <div style="margin-bottom: 40px">
+            <h3
+              style="
+                color: var(--accent);
+                font-size: 26px;
+                margin-bottom: 16px;
+                padding-bottom: 12px;
+                border-bottom: 2px solid var(--border);
+              "
+            >
+              Musikkpedagogar
+            </h3>
+            <p>
+              FOT gjer undervisning i rytme, timing og groove konkret, visuelt
+              og interaktivt. Du kan vise korleis levande taktartar skil seg frå
+              ein jamn kvartpuls, visualisere prosentfordeling i asymmetriske
+              mønster, og gje elevane eit tydeleg bilete av kva som gjer ei
+              rytme ujamn – og kvifor den likevel kan svinge.
+            </p>
+            <p>
+              Med FOT kan elevane sjå, høyre og måle forskjellar i timing, og få
+              ei djupare forståing av korleis mikrotiming påverkar groove og
+              musikalsk uttrykk. Appen eignar seg både til individuell
+              undervisning og arbeid i gruppe, og gjer abstrakte konsept som
+              prosentfordeling, polyrytmar og CPM konkrete og tilgjengelege.
+            </p>
+          </div>
+
+          <div>
+            <h3
+              style="
+                color: var(--accent);
+                font-size: 26px;
+                margin-bottom: 16px;
+                padding-bottom: 12px;
+                border-bottom: 2px solid var(--border);
+              "
+            >
+              Forskarar og analytikarar
+            </h3>
+            <p>
+              FOT registrerer detaljerte timingdata som taktar per minutt (CPM),
+              gjennomsnittleg takt-tid og prosentfordeling per slag. Dette gjer
+              det mogleg å analysere og samanlikne rytmiske praksisar på tvers
+              av stilarter, epokar, tradisjonar og individuelle utøvarar.
+            </p>
+            <p>
+              Med FOT kan du dokumentere og visualisere forskjellar i rytmisk
+              utføring, undersøkje stabilitet og konsistens i tapping over tid,
+              og hente fram målbare data som viser korleis mikrotiming varierer
+              mellom ulike musikalske kontekstar.
+            </p>
+            <p>
+              Verktøyet kan slik eigne seg til forsking innan etnomusikologi,
+              rytmeanalyse og musikkpsykologi – eller som eit middel til å
+              utforske og kartleggje personlege rytmiske særtrekk hos
+              enkeltutøvarar.
+            </p>
+          </div>
+        </div>
+
+        <div
+          style="
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 32px;
+            background: var(--panel);
+            border-radius: 12px;
+          "
+        >
+          <h2
+            id="funksjonar"
+            style="
+              font-size: 36px;
+              margin-bottom: 32px;
+              text-align: center;
+              color: var(--text);
+            "
+          >
+            Funksjonar og verktøy
+          </h2>
+
+          <div style="margin-bottom: 40px">
+            <h3
+              style="
+                color: var(--accent);
+                font-size: 26px;
+                margin-bottom: 16px;
+                padding-bottom: 12px;
+                border-bottom: 2px solid var(--border);
+              "
+            >
+              Hovudvindauge
+            </h3>
+            <p>
+              Hovudvindauget i FOT består av eit interaktivt metronomhjul med
+              visuelle slagkort, der du kan forme rytmen din direkte gjennom
+              intuitive kontroller.
+            </p>
+            <ul>
+              <li>
+                <strong>Metronomhjul (sirkulær visning):</strong> Ei visuell
+                representasjon av syklusen din, der kvart slag er vist som eit
+                kakestykke. Storleiknon på kakestykket viser kor mykje tid
+                slaget får av totalen. Du kan dra i kakestykkene for å justere
+                prosentfordelinga, og klikke på dei for å endre underdelingar.
+              </li>
+              <li>
+                <strong>Slagkort (beat cards):</strong> Visuelle modulære "kort"
+                for kvart slag, med slider for tyngd/prosent,
+                underdelingstellar, og MIDI-parametrar. Du kan skrive inn
+                verdiane direkte eller dra i sliderene for å justere. Kvar beat
+                kan få si eiga tonehøgde for bruk med eksterne synthar.
+              </li>
+              <li>
+                <strong>CPM (Cycles Per Minute):</strong> Viser kor mange
+                komplette syklusar (takter) som blir spelt per minutt. Dette gir
+                ein meir presis tempomåling enn tradisjonell BPM når du jobbar
+                med asymmetriske rytmar.
+              </li>
+              <li>
+                <strong>Prosentfordeling:</strong> Kvar beat kan få ein del av
+                total takt-tid, vist som prosent. Dette gjer det mogleg å
+                modellere ujamn intern struktur – slik at du kan lage rytmar med
+                naturleg "sving" eller asymmetriske pulsar.
+              </li>
+              <li>
+                <strong>Underdeling per beat:</strong> Uavhengig styring av
+                underdelingar (opp til 16 per slag) for enkeltslag. Dette lar
+                deg lage komplekse rytmiske strukturar med varierande
+                detaljeringsnivå.
+              </li>
+              <li>
+                <strong>Tyngd og lyd:</strong> Eige volum for master-slag og
+                underdelingar, med WAV-basert klikklyd (click.wav). Du kan opne
+                lydpanelet (W) for å justere lydstyrke og klangkarakter.
+              </li>
+            </ul>
+          </div>
+
+          <div style="margin-bottom: 40px">
+            <h3
+              style="
+                color: var(--accent);
+                font-size: 26px;
+                margin-bottom: 16px;
+                padding-bottom: 12px;
+                border-bottom: 2px solid var(--border);
+              "
+            >
+              Sequencer
+            </h3>
+            <p>
+              FOT har ein innebygd sequencer som let deg ta opp og lagre
+              rytmesekvenser med komplekse arrangement.
+            </p>
+            <ul>
+              <li>
+                <strong>9 separate takt-loops:</strong> Ta opp og lagre opp til
+                9 ulike rytmiske loops, med høve til å leggje til og forme
+                bassgangar per loop. Dette gjer det mogleg å byggje komplekse
+                rytmiske arrangement.
+              </li>
+              <li>
+                <strong>1-shot eller loop kø-system:</strong> Sett opp ei
+                rekkefølgje av dine forhåndslagra loops, og spel dei av i
+                sekvens eller som ein kontinuerleg loop. Med hotkeys (1-9) kan
+                du legge til og redigere køene dine som ein loopstation.
+              </li>
+            </ul>
+            <video autoplay loop muted playsinline class="screenshot">
+              <source src="svivsnutt2.mp4" type="video/mp4" />
+              Din nettlesar støttar ikkje video.
+            </video>
+            <p class="caption">
+              Demo av sequencer som endrer taktmønster med loopa kø
+            </p>
+          </div>
+
+          <div style="margin-bottom: 40px">
+            <h3
+              style="
+                color: var(--accent);
+                font-size: 26px;
+                margin-bottom: 16px;
+                padding-bottom: 12px;
+                border-bottom: 2px solid var(--border);
+              "
+            >
+              Tap-tempo
+            </h3>
+            <p>
+              FOT har eit presist tap-tempo-verktøy for å fange levande timing
+              og eksportere rytmedata.
+            </p>
+            <ul>
+              <li>
+                <strong>Presist tap-tempo:</strong> Eit eiget tap tempo vindauge
+                fangar nøyaktig tid per slag når du tappar inn rytmen. FOT
+                reknar ut snittet av rytmen du tappar inn slik at du kan laste
+                dette direkte inn i metronomen. Dette er perfekt for å herme
+                etter rytmar frå opptak, eller for å fange din eigen idelle
+                takt-gyng.
+              </li>
+              <li>
+                <strong>MIDI-eksport:</strong> Eksportér ein lang serie av tappa
+                slag som MIDI-fil og bruk dei i DAW-ar eller
+                noteskrivingsprogram. Denne funksjonen lar deg f.eks. importere
+                eit beat-map av ei låt som er spelt inn fritt utan klikk, og
+                framleis kunne transkribere opptaka med det som vil sjå ut som
+                vanleg notasjon.
+              </li>
+            </ul>
+            <video autoplay loop muted playsinline class="screenshot">
+              <source src="taktteller1.mp4" type="video/mp4" />
+              Din nettlesar støttar ikkje video.
+            </video>
+            <p class="caption">Demo av takttelling</p>
+          </div>
+
+          <div style="margin-bottom: 40px">
+            <h3
+              style="
+                color: var(--accent);
+                font-size: 26px;
+                margin-bottom: 16px;
+                padding-bottom: 12px;
+                border-bottom: 2px solid var(--border);
+              "
+            >
+              Presets frå verdsrytmar, og moglegheit for lagring og masseimport
+            </h3>
+            <p>
+              FOT kjem med eit knippe ferdige presets for rytmar innan norsk
+              folkemusikk og dans, og eit lite utval rytmar frå europa. Vidare
+              lar den deg lagre dine eigne taktstrukturar, med moglegheit for
+              mappeimport som opnar mange metronomar på ein gong. Du vil også
+              kunne dele dine presets med andre.
+            </p>
+            <ul>
+              <li>
+                <strong>Eksport / import av taktpreset:</strong> Lagra
+                syklusdata (metronome_data) og henta dei seinare gjennom Lagre /
+                Importer-menyen. Appen lagrar taktart, underdeling, slag-tyngde,
+                tempo, volum, underdelingsvolum, bassgang og lagra looper i
+                sequenceren. Slik kan du bruke den til å "lagre låtar" også. Du
+                kan også dele presets med andre musikarar.
+              </li>
+              <li>
+                <strong>Lagring i katalogar:</strong> Organiser takt-strukturar
+                i mapper (lagratakter, Metronomes) for enkel gjenbruk og deling.
+                Det er mogleg å masseimportere heile katalogar med takt-presets,
+                som vil åpne fleire metronomar samtidig.
+              </li>
+            </ul>
+            <video autoplay loop muted playsinline class="screenshot">
+              <source src="presets1.mp4" type="video/mp4" />
+              Din nettlesar støttar ikkje video.
+            </video>
+            <p class="caption">Demo av preset lasting</p>
+
+            <video autoplay loop muted playsinline class="screenshot">
+              <source src="batchimport1.mp4" type="video/mp4" />
+              Din nettlesar støttar ikkje video.
+            </video>
+            <p class="caption">Demo av masseimport</p>
+          </div>
+
+          <div>
+            <h3
+              style="
+                color: var(--accent);
+                font-size: 26px;
+                margin-bottom: 16px;
+                padding-bottom: 12px;
+                border-bottom: 2px solid var(--border);
+              "
+            >
+              Fleire instanser i synk
+            </h3>
+            <p>
+              FOT kan køyre fleire metronomar samtidig, kvar med sitt eige
+              mønster, tempo og fargetema – men med synkronisert start og stopp.
+            </p>
+            <ul>
+              <li>
+                <strong>Ubegrensa instansar:</strong> Kjør så mange metronomar
+                som du trenger samtidig, kvar med eige fargetema og visuell
+                identitet.
+              </li>
+              <li>
+                <strong>Synkronisering:</strong> Vel om instansane skal ha
+                synkront tempo, eller om dei skal køyre med individuelle tempo.
+                Du kan også velje om dei skal starte og stoppe samtidig, eller
+                ha uavhengig kontroll.
+              </li>
+              <li>
+                <strong>Polyrytmar:</strong> Bygg komplekse polyrytmiske
+                strukturar ved å kombinere fleire metronomar med ulike
+                sykluslengder eller tempo. Dette gjer det mogleg å øve på
+                avanserte rytmiske samanhengar.
+              </li>
+            </ul>
+            <video autoplay loop muted playsinline class="screenshot">
+              <source src="svivsnutt3.mp4" type="video/mp4" />
+              Din nettlesar støttar ikkje video.
+            </video>
+            <p class="caption">Demo av multi-instans</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="en-content" class="hidden">
+        <h1>About Sviv<img src="svivicon.png" alt="Sviv icon" /></h1>
+
+        <div
+          style="
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 48px;
+            background: var(--panel);
+            border-radius: 12px;
+            border: 3px solid var(--accent);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+          "
+        >
+          <p
+            style="
+              font-size: clamp(20px, 4vw, 32px);
+              font-weight: 600;
+              color: var(--accent);
+              margin-bottom: 32px;
+              text-align: center;
+              line-height: 1.3;
+            "
+          >
+            Elastic rhythm tool for more than just keeping time.
+          </p>
+          <p
+            style="
+              text-align: center;
+              font-style: italic;
+              color: var(--text-muted);
+              margin: 0 auto 32px;
+              max-width: 800px;
+              font-size: clamp(14px, 2vw, 16px);
+            "
+          >
+            Fot is Norwegian for "foot" – meaning rhythm, grounding, and the
+            human connection to time through movement. Also the verbal
+            expression "få fot" means to "get the feel" or get exited about a
+            rhythm.
+          </p>
+
+          <h3
+            style="font-size: 22px; margin-bottom: 16px; color: var(--accent)"
+          >
+            Overview
+          </h3>
+
+          <p>
+            FOT is an elastic metronome and rhythm tool designed for musicians
+            who want to explore living rhythms, asymmetric time signatures, and
+            microscopic timing variations. Instead of a fixed BPM system, FOT
+            works with flowing cycles where rhythm can breathe – just like
+            rhythms actually are in practice.
+          </p>
+
+          <p>
+            The app gives you insight into what swings because it's even – and
+            what swings precisely because it isn't. With adjustment
+            possibilities down to percentage decimals, you'll find the answer to
+            where the breaking point lies between precision and groove.
+          </p>
+
+          <p><strong>When you use SVIV, you can:</strong></p>
+          <ul>
+            <li>
+              Create your own rhythms with any length, accent, and subdivision
+            </li>
+            <li>
+              Practice with crooked time signatures like Pols, Polska, and
+              Springar
+            </li>
+            <li>Explore cycles where each beat can have different duration</li>
+            <li>
+              Run multiple instances simultaneously – in sync, or at their own
+              tempo
+            </li>
+            <li>
+              Use the built-in sequencer's "follow" mode to play precise bass
+              lines over the rhythm the metronome is set to
+            </li>
+            <li>
+              Use the built-in sequencer to record and create queues of complex
+              rhythm sequences and bass lines
+            </li>
+          </ul>
+
+          <p><strong>Use as:</strong></p>
+          <ul>
+            <li>A standalone asymmetric metronome</li>
+            <li>
+              A MIDI beat machine and sequencer, with its own tones, groove, and
+              timing
+            </li>
+          </ul>
+
+          <video autoplay loop muted playsinline class="screenshot">
+            <source src="svivsnutt1.mp4" type="video/mp4" />
+            Your browser does not support video.
+          </video>
+          <p class="caption">Demo from main window</p>
+        </div>
+
+        <div
+          style="
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 32px;
+            background: var(--panel);
+            border-radius: 12px;
+          "
+        >
+          <h2
+            id="applications"
+            style="
+              font-size: 36px;
+              margin-bottom: 32px;
+              text-align: center;
+              color: var(--text);
+            "
+          >
+            Applications
+          </h2>
+
+          <div style="margin-bottom: 40px">
+            <h3
+              style="
+                color: var(--accent);
+                font-size: 26px;
+                margin-bottom: 16px;
+                padding-bottom: 12px;
+                border-bottom: 2px solid var(--border);
+              "
+            >
+              Performers
+            </h3>
+            <p>
+              Performers can use FOT to explore microstructures in rhythm and
+              learn how to pull individual beats to create life in the groove.
+            </p>
+            <p>
+              The app makes it easy to work with asymmetric time signatures –
+              such as in Pols, Polska, Valdres- and Telespringar – and other
+              living folk dance forms.
+            </p>
+            <p>
+              With the built-in sequencer, you can shape precise rhythmic
+              sequences for practice, experiment with transformations from
+              reference rhythms, and train both polyrhythms and different ways
+              of perceiving swing.
+            </p>
+            <p>
+              The sequencer function also makes it possible to program bass
+              lines and create song sequences, so the metronome can be used in
+              composition, practice, and live performances.
+            </p>
+          </div>
+
+          <div style="margin-bottom: 40px">
+            <h3
+              style="
+                color: var(--accent);
+                font-size: 26px;
+                margin-bottom: 16px;
+                padding-bottom: 12px;
+                border-bottom: 2px solid var(--border);
+              "
+            >
+              Ensemble / Collaboration / Dance
+            </h3>
+            <p>
+              FOT can run multiple metronomes simultaneously and send signals to
+              different MIDI outputs, each with its own rhythmic pattern or
+              tempo. This makes it possible to program everything from bass
+              lines and drum sounds to complex polyrhythms and interaction
+              between different time levels.
+            </p>
+            <p>
+              Since the app can send MIDI into DAWs, it's easy to route each
+              metronome to separate channels. This way, it will be easy to send
+              the metronomes to their own headsets, wireless in-ear systems,
+              monitors, or other audio outputs.
+            </p>
+
+            <p>
+              The app combines sound and visual indicators, so you can interact
+              both with and without sound. This opens FOT to creative
+              applications that have not yet been explored – a tool for those
+              who want to challenge the boundaries of rhythm and collaboration.
+            </p>
+          </div>
+
+          <div style="margin-bottom: 40px">
+            <h3
+              style="
+                color: var(--accent);
+                font-size: 26px;
+                margin-bottom: 16px;
+                padding-bottom: 12px;
+                border-bottom: 2px solid var(--border);
+              "
+            >
+              Improvisers
+            </h3>
+            <p>
+              For those working with improvisation, FOT is a tool for creating
+              flexible and organic time frames. You can build patterns where
+              core pulse can vary freely, or test alternative internal
+              proportions in real-time. You can also assign a person to control,
+              vary, and play with the metronomes.
+            </p>
+            <p>
+              With FOT you can also create extreme rhythmic landscapes with many
+              asymmetrically subdivided beats in slow and fast tempos. Combined
+              with a sequencer with MIDI follow function for playing on
+              keyboard, it's easy to create insane and chaotic sounds together
+              with the VST library you have in your DAW, for example.
+            </p>
+            <video autoplay loop muted playsinline class="screenshot">
+              <source src="ekstrem1.mp4" type="video/mp4" />
+              Your browser does not support video.
+            </video>
+            <p class="caption">Demo of extreme rhythms</p>
+          </div>
+
+          <div style="margin-bottom: 40px">
+            <h3
+              style="
+                color: var(--accent);
+                font-size: 26px;
+                margin-bottom: 16px;
+                padding-bottom: 12px;
+                border-bottom: 2px solid var(--border);
+              "
+            >
+              Composers and arrangers
+            </h3>
+            <p>
+              FOT lets you build polymetric and asymmetric time signatures by
+              adjusting percentage distribution, subdivisions, and the length of
+              each beat. You can create complex rhythm sequences, explore
+              microscopic time shifts, and shape grooves that lie outside the
+              standardized grid in a DAW.
+            </p>
+            <p>
+              When you're satisfied with the result, you can export MIDI data
+              directly to your production environment or transfer it to a
+              notation program for transcription and arrangement. This makes FOT
+              a compositional tool that bridges living rhythmic expression and
+              digital production.
+            </p>
+            <p>
+              FOT can also be used to analyze existing music: Tap in the rhythm
+              from a recording, and the program will calculate microtiming, CPM,
+              and percentage distribution – so you can reconstruct the tempo and
+              beats of rubato music, full of fermatas, without problems. Ideal
+              if you need to transcribe music with free timing – or work with
+              arrangement and scoring for a demo that "didn't take tempo too
+              seriously".
+            </p>
+          </div>
+
+          <div style="margin-bottom: 40px">
+            <h3
+              style="
+                color: var(--accent);
+                font-size: 26px;
+                margin-bottom: 16px;
+                padding-bottom: 12px;
+                border-bottom: 2px solid var(--border);
+              "
+            >
+              Music educators
+            </h3>
+            <p>
+              FOT makes teaching rhythm, timing, and groove concrete, visual,
+              and interactive. You can show how living time signatures differ
+              from an even quarter pulse, visualize percentage distribution in
+              asymmetric patterns, and give students a clear picture of what
+              makes a rhythm uneven – and why it can still swing.
+            </p>
+            <p>
+              With FOT, students can see, hear, and measure differences in
+              timing, and gain a deeper understanding of how microtiming affects
+              groove and musical expression. The app is suitable for both
+              individual teaching and group work, and makes abstract concepts
+              like percentage distribution, polyrhythms, and CPM concrete and
+              accessible.
+            </p>
+          </div>
+
+          <div>
+            <h3
+              style="
+                color: var(--accent);
+                font-size: 26px;
+                margin-bottom: 16px;
+                padding-bottom: 12px;
+                border-bottom: 2px solid var(--border);
+              "
+            >
+              Researchers and analysts
+            </h3>
+            <p>
+              FOT records detailed timing data such as cycles per minute (CPM),
+              average measure time, and percentage distribution per beat. This
+              makes it possible to analyze and compare rhythmic practices across
+              styles, epochs, traditions, and individual performers.
+            </p>
+            <p>
+              With FOT you can document and visualize differences in rhythmic
+              execution, investigate stability and consistency in tapping over
+              time, and extract measurable data showing how microtiming varies
+              between different musical contexts.
+            </p>
+            <p>
+              The tool can thus be suitable for research in ethnomusicology,
+              rhythm analysis, and music psychology – or as a means to explore
+              and map personal rhythmic characteristics of individual
+              performers.
+            </p>
+          </div>
+        </div>
+
+        <div
+          style="
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 32px;
+            background: var(--panel);
+            border-radius: 12px;
+          "
+        >
+          <h2
+            id="features"
+            style="
+              font-size: 36px;
+              margin-bottom: 32px;
+              text-align: center;
+              color: var(--text);
+            "
+          >
+            Features and Tools
+          </h2>
+
+          <div style="margin-bottom: 40px">
+            <h3
+              style="
+                color: var(--accent);
+                font-size: 26px;
+                margin-bottom: 16px;
+                padding-bottom: 12px;
+                border-bottom: 2px solid var(--border);
+              "
+            >
+              Main Window
+            </h3>
+            <p>
+              The main window in FOT consists of an interactive metronome wheel
+              with visual beat cards, where you can shape your rhythm directly
+              through intuitive controls.
+            </p>
+            <ul>
+              <li>
+                <strong>Metronome wheel (circular display):</strong> A visual
+                representation of your cycle, where each beat is shown as a pie
+                piece. The size of the pie piece shows how much time the beat
+                gets of the total. You can drag the pie pieces to adjust
+                percentage distribution, and click on them to change
+                subdivisions.
+              </li>
+              <li>
+                <strong>Beat cards:</strong> Visual modular "cards" for each
+                beat, with slider for weight/percentage, subdivision counter,
+                and MIDI parameters. You can enter values directly or drag the
+                sliders to adjust. Each beat can get its own pitch for use with
+                external synths.
+              </li>
+              <li>
+                <strong>CPM (Cycles Per Minute):</strong> Shows how many
+                complete cycles (measures) are played per minute. This provides
+                a more precise tempo measurement than traditional BPM when
+                working with asymmetric rhythms.
+              </li>
+              <li>
+                <strong>Percentage distribution:</strong> Each beat can get a
+                portion of total measure time, shown as percentage. This makes
+                it possible to model uneven internal structure – so you can
+                create rhythms with natural "swing" or asymmetric pulses.
+              </li>
+              <li>
+                <strong>Subdivision per beat:</strong> Independent control of
+                subdivisions (up to 16 per beat) for individual beats. This lets
+                you create complex rhythmic structures with varying levels of
+                detail.
+              </li>
+              <li>
+                <strong>Weight and sound:</strong> Separate volume for master
+                beats and subdivisions, with WAV-based click sound (click.wav).
+                You can open the sound panel (W) to adjust volume and sound
+                character.
+              </li>
+            </ul>
+          </div>
+
+          <div style="margin-bottom: 40px">
+            <h3
+              style="
+                color: var(--accent);
+                font-size: 26px;
+                margin-bottom: 16px;
+                padding-bottom: 12px;
+                border-bottom: 2px solid var(--border);
+              "
+            >
+              Sequencer
+            </h3>
+            <p>
+              FOT has a built-in sequencer that lets you record and save rhythm
+              sequences with complex arrangements.
+            </p>
+            <ul>
+              <li>
+                <strong>9 separate measure loops:</strong> Record and save up to
+                9 different rhythmic loops, with ability to add and shape bass
+                lines per loop. This makes it possible to build complex rhythmic
+                arrangements.
+              </li>
+              <li>
+                <strong>1-shot or loop queue system:</strong> Set up a sequence
+                of your pre-saved loops, and play them in sequence or as a
+                continuous loop. With hotkeys (1-9) you can add and edit your
+                queues like a loop station.
+              </li>
+            </ul>
+            <video autoplay loop muted playsinline class="screenshot">
+              <source src="svivsnutt2.mp4" type="video/mp4" />
+              Your browser does not support video.
+            </video>
+            <p class="caption">
+              Demo of sequencer changing measure patterns with looped queue
+            </p>
+          </div>
+
+          <div style="margin-bottom: 40px">
+            <h3
+              style="
+                color: var(--accent);
+                font-size: 26px;
+                margin-bottom: 16px;
+                padding-bottom: 12px;
+                border-bottom: 2px solid var(--border);
+              "
+            >
+              Tap-Tempo
+            </h3>
+            <p>
+              FOT has a precise tap-tempo tool for capturing living timing and
+              exporting rhythm data.
+            </p>
+            <ul>
+              <li>
+                <strong>Precise tap-tempo:</strong> A dedicated tap tempo window
+                captures exact time per beat when you tap in the rhythm. FOT
+                calculates the average of the rhythm you tap in so you can load
+                this directly into the metronome. This is perfect for mimicking
+                rhythms from recordings, or for capturing your own ideal measure
+                swing.
+              </li>
+              <li>
+                <strong>MIDI export:</strong> Export a long series of tapped
+                beats as MIDI file and use them in DAWs or notation software.
+                This function lets you, for example, import a beat map of a song
+                recorded freely without click, and still be able to transcribe
+                the recordings with what will look like regular notation.
+              </li>
+            </ul>
+            <video autoplay loop muted playsinline class="screenshot">
+              <source src="taktteller1.mp4" type="video/mp4" />
+              Your browser does not support video.
+            </video>
+            <p class="caption">Demo of measure tapping</p>
+          </div>
+
+          <div style="margin-bottom: 40px">
+            <h3
+              style="
+                color: var(--accent);
+                font-size: 26px;
+                margin-bottom: 16px;
+                padding-bottom: 12px;
+                border-bottom: 2px solid var(--border);
+              "
+            >
+              Presets from world rhythms, and possibility for saving and mass
+              import
+            </h3>
+            <p>
+              FOT comes with a bundle of ready-made presets for rhythms within
+              Norwegian folk music and dance, and a small selection of rhythms
+              from Europe. Furthermore, it lets you save your own measure
+              structures, with the possibility of folder import that opens many
+              metronomes at once. You will also be able to share your presets
+              with others.
+            </p>
+            <ul>
+              <li>
+                <strong>Export / import of measure presets:</strong> Save cycle
+                data (metronome_data) and retrieve later through the Save /
+                Import menu. The app stores time signature, subdivision, beat
+                weight, tempo, volume, subdivision volume, bass line, and saved
+                loops in the sequencer. This way you can use it to "save songs"
+                as well. You can also share presets with other musicians.
+              </li>
+              <li>
+                <strong>Storage in directories:</strong> Organize measure
+                structures in folders (lagratakter, Metronomes) for easy reuse
+                and sharing. It is possible to mass import entire directories
+                with measure presets, which will open multiple metronomes
+                simultaneously.
+              </li>
+            </ul>
+            <video autoplay loop muted playsinline class="screenshot">
+              <source src="presets1.mp4" type="video/mp4" />
+              Your browser does not support video.
+            </video>
+            <p class="caption">Demo of preset loading</p>
+
+            <video autoplay loop muted playsinline class="screenshot">
+              <source src="batchimport1.mp4" type="video/mp4" />
+              Your browser does not support video.
+            </video>
+            <p class="caption">Demo of mass import</p>
+          </div>
+
+          <div>
+            <h3
+              style="
+                color: var(--accent);
+                font-size: 26px;
+                margin-bottom: 16px;
+                padding-bottom: 12px;
+                border-bottom: 2px solid var(--border);
+              "
+            >
+              Multiple Instances in Sync
+            </h3>
+            <p>
+              FOT can run multiple metronomes simultaneously, each with its own
+              pattern, tempo, and color theme – but with synchronized start and
+              stop.
+            </p>
+            <ul>
+              <li>
+                <strong>Unlimited instances:</strong> Run as many metronomes as
+                you need simultaneously, each with its own color theme and
+                visual identity.
+              </li>
+              <li>
+                <strong>Synchronization:</strong> Choose whether instances
+                should have synchronized tempo, or run with individual tempos.
+                You can also choose whether they should start and stop
+                simultaneously, or have independent control.
+              </li>
+              <li>
+                <strong>Polyrhythms:</strong> Build complex polyrhythmic
+                structures by combining multiple metronomes with different cycle
+                lengths or tempos. This makes it possible to practice advanced
+                rhythmic relationships.
+              </li>
+            </ul>
+            <video autoplay loop muted playsinline class="screenshot">
+              <source src="svivsnutt3.mp4" type="video/mp4" />
+              Your browser does not support video.
+            </video>
+            <p class="caption">Demo of multi-instance</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Austestad. All rights reserved.</p>
+    </footer>
+
+    <script src="../shared/hamburger.js"></script>
+    <script src="../shared/language.js"></script>
+    <script>
+      initLanguageSwitch(
+        { nb: "nb-content", en: "en-content" },
+        { nb: "nav-nb", en: "nav-en" },
+        { nb: "home-nb", en: "home-en" },
+        { nb: "mobile-home-nb", en: "mobile-home-en" },
+        { nb: "mobile-svev-uses-nb", en: "mobile-svev-uses-en" },
+        { nb: "mobile-svev-features-nb", en: "mobile-svev-features-en" },
+        { nb: "mobile-svev-auto-nb", en: "mobile-svev-auto-en" },
+        { nb: "mobile-fot-nav-nb", en: "mobile-fot-nav-en" },
+        { nb: "btn-nb", en: "btn-en" }
+      );
+    </script>
+  </body>
+</html>

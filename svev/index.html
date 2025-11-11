@@ -23,9 +23,9 @@
             <img src="../icon.png" alt="Svev" />
             <span>Svev</span>
           </a>
-          <a href="../fot/index.html">
-            <img src="../fot/foticon.png" alt="Fot" />
-            <span>Fot</span>
+          <a href="../sviv/index.html">
+            <img src="../sviv/svivicon.png" alt="Sviv" />
+            <span>Sviv</span>
           </a>
         </nav>
       </div>
@@ -72,18 +72,18 @@
         </div>
 
         <div class="mobile-menu-section">
-          <a href="../fot/index.html" class="mobile-menu-link">
-            <img src="../fot/foticon.png" alt="Fot" />
-            <span>Fot</span>
+          <a href="../sviv/index.html" class="mobile-menu-link">
+            <img src="../sviv/svivicon.png" alt="Sviv" />
+            <span>Sviv</span>
           </a>
           <div class="mobile-submenu">
-            <a href="../fot/index.html#bruksomrade">
-              <span id="mobile-fot-uses-nb">Bruksområde</span>
-              <span id="mobile-fot-uses-en" class="hidden">Applications</span>
+            <a href="../sviv/index.html#bruksomrade">
+              <span id="mobile-sviv-uses-nb">Bruksområde</span>
+              <span id="mobile-sviv-uses-en" class="hidden">Applications</span>
             </a>
-            <a href="../fot/index.html#funksjonar">
-              <span id="mobile-fot-features-nb">Funksjonar</span>
-              <span id="mobile-fot-features-en" class="hidden">Features</span>
+            <a href="../sviv/index.html#funksjonar">
+              <span id="mobile-sviv-features-nb">Funksjonar</span>
+              <span id="mobile-sviv-features-en" class="hidden">Features</span>
             </a>
           </div>
         </div>
@@ -92,248 +92,365 @@
     <main>
       <section id="nb-content">
         <h1>Om Svev<img src="../icon.png" alt="Svev ikon" /></h1>
-        <p
-          style="
-            font-size: 20px;
-            font-weight: 500;
-            color: var(--accent);
-            margin-bottom: 24px;
-          "
-        >
-          Utforsk eit rikare harmoniske univers med sanntids-stemming.
-        </p>
-        <p>
-          Svev er en sanntidsapplikasjon for dynamisk mikrotuning basert på MIDI
-          Polyphonic Expression (MPE). Kort sagt fungerer det som et mellomledd
-          mellom MIDI-instrumentet ditt og lydprogramvaren. Den lar deg også
-          stemme om dine innspelte midi-opptak.
-        </p>
+        
+        <div style="max-width: 1000px; margin: 40px auto; padding: 48px; background: var(--panel); border-radius: 12px; border: 3px solid var(--accent); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);">
+          <p
+            style="
+              font-size: clamp(20px, 4vw, 32px);
+              font-weight: 600;
+              color: var(--accent);
+              margin-bottom: 32px;
+              text-align: center;
+              line-height: 1.3;
+            "
+          >
+            Utforsk eit rikare harmoniske univers med sanntids-stemming.
+          </p>
+          <p style="text-align: center; font-style: italic; color: var(--text-muted); margin: 0 auto 32px; max-width: 800px; font-size: clamp(14px, 2vw, 16px);">
+            - Svev – når tonar endrar tonehøgd, oppstår eit akustisk fenomen som kan skildrast som ei svevande kjensle.
+          </p>
+          
+          <h3 style="font-size: 22px; margin-bottom: 16px; color: var(--accent);">Oversikt</h3>
+          
+          <p>
+            Svev er en sanntidsapplikasjon for dynamisk mikrotuning basert på MIDI
+            Polyphonic Expression (MPE). Kort sagt fungerer det som et mellomledd
+            mellom MIDI-instrumentet ditt og lydprogramvaren. Den lar deg også
+            stemme om dine innspelte midi-opptak.
+          </p>
 
-        <p>
-          Når du spelar på eit MIDI-klaviatur, tek Svev imot signala, justerer
-          intonasjonen i sanntid etter innstillingane du har valt, og sender det
-          justerte signalet vidare til det lydproduserande programmet – til
-          dømes Logic eller Ableton Live.
-        </p>
+          <p>
+            Når du spelar på eit MIDI-klaviatur, tek Svev imot signala, justerer
+            intonasjonen i sanntid etter innstillingane du har valt, og sender det
+            justerte signalet vidare til det lydproduserande programmet – til
+            dømes Logic eller Ableton Live.
+          </p>
 
-        <p>
-          Fordi Svev nyttar MPE-formatet, kan kvar tone justerast individuelt,
-          ikkje berre heile instrumentet samtidig. Det betyr at du kan utforske
-          finare nyansar i intonasjon – for eksempel ved å bruke:
-        </p>
+          <p>
+            Fordi Svev nyttar MPE-formatet, kan kvar tone justerast individuelt,
+            ikkje berre heile instrumentet samtidig. Det betyr at du kan utforske
+            finare nyansar i intonasjon – for eksempel ved å bruke:
+          </p>
 
-        <ul>
-          <li>Auto-tuning-modusar som automatisk korrigerer tonehøgd,</li>
-          <li>
-            Historiske tempereringar (som rein stemming eller
-            middeltonestemming),
-          </li>
-          <li>eller eigendefinerte stemmesystem du lagar sjølv.</li>
-        </ul>
+          <ul>
+            <li>Auto-tuning-modusar som automatisk korrigerer tonehøgd,</li>
+            <li>
+              Historiske tempereringar (som rein stemming eller
+              middeltonestemming),
+            </li>
+            <li>eller eigendefinerte stemmesystem du lagar sjølv.</li>
+          </ul>
 
-        <p>
-          For at dette skal fungere, må lydprogrammet eller synth-en du brukar
-          støtte MPE, som først kom i 2018. Mange moderne DAW-ar og
-          VST-instrument har no innebygd støtte for dette. Svev brukar
-          moglegheita til å inføre mikrotuning på fleire måtar.
-        </p>
+          <p>
+            For at dette skal fungere, må lydprogrammet eller synth-en du brukar
+            støtte MPE, som først kom i 2018. Mange moderne DAW-ar og
+            VST-instrument har no innebygd støtte for dette. Svev brukar
+            moglegheita til å inføre mikrotuning på fleire måtar.
+          </p>
 
-        <video autoplay loop muted playsinline class="screenshot">
-          <source src="groven example 1.mp4" type="video/mp4" />
-          Din nettlesar støttar ikkje video.
-        </video>
-        <p class="caption">Demo frå Groven-modus</p>
+          <video autoplay loop muted playsinline class="screenshot">
+            <source src="groven example 1.mp4" type="video/mp4" />
+            Din nettlesar støttar ikkje video.
+          </video>
+          <p class="caption">Demo frå Groven-modus</p>
+        </div>
 
-        <h2 id="bruksomrade">Bruksområde</h2>
+        <div style="max-width: 1000px; margin: 60px auto; padding: 32px; background: var(--panel); border-radius: 12px;">
+          <h2 id="bruksomrade" style="font-size: 36px; margin-bottom: 32px; text-align: center; color: var(--text);">Bruksområde</h2>
 
-        <h3>Utøvarar</h3>
-        <p>
-          Svev fungerer som eit hørselsutviklande reiskap som lar deg oppleve og
-          kontrollere små forskjellar i intonasjon i sanntid. Du kan øve til ein
-          sofistikert tuner som kontinuerleg oppdaterer seg etter vald
-          temperering, og undersøke korleis mikroskopiske variasjonar påverkar
-          klang og samklang.
-        </p>
-        <p>
-          Dette gjer Svev til eit ideelt verktøy for å skjerpe intonasjonssansen
-          og utvikle presisjonskontroll – anten du speler, syng, eller
-          kombinerer dette med MIDI-styring. Slik kan du arbeide med å
-          finjustere eigen intonasjon og få direkte, auditiv tilbakemelding på
-          korleis små justeringar endrar klangen.
-        </p>
+          <div style="margin-bottom: 40px;">
+            <h3 style="color: var(--accent); font-size: 26px; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 2px solid var(--border);">Utøvarar</h3>
+            <p>
+              Svev fungerer som eit hørselsutviklande reiskap som lar deg oppleve og
+              kontrollere små forskjellar i intonasjon i sanntid. Du kan øve til ein
+              sofistikert tuner som kontinuerleg oppdaterer seg etter vald
+              temperering, og undersøke korleis mikroskopiske variasjonar påverkar
+              klang og samklang.
+            </p>
+            <p>
+              Dette gjer Svev til eit ideelt verktøy for å skjerpe intonasjonssansen
+              og utvikle presisjonskontroll – anten du speler, syng, eller
+              kombinerer dette med MIDI-styring. Slik kan du arbeide med å
+              finjustere eigen intonasjon og få direkte, auditiv tilbakemelding på
+              korleis små justeringar endrar klangen.
+            </p>
 
-        <video autoplay loop muted playsinline class="screenshot">
-          <source src="tuner2.mp4" type="video/mp4" />
-          Din nettlesar støttar ikkje video.
-        </video>
-        <p class="caption">Demo frå tunervindauge</p>
+            <video autoplay loop muted playsinline class="screenshot">
+              <source src="tuner2.mp4" type="video/mp4" />
+              Din nettlesar støttar ikkje video.
+            </video>
+            <p class="caption">Demo frå tunervindauge</p>
+          </div>
 
-        <h3>Komponistar</h3>
-        <p>
-          Svev opnar for komposisjon i fleksible og levande tonesystem, der du
-          kan forme nye harmoniske rom og flytande stemningar. Du kan
-          programmere eigne mikrotuningar, kombinere ulike tempereringar, og
-          skape musikk som dynamisk skiftar mellom tonale landskap. 3 ulike
-          auto-intonasjonsmodus kan også brukast til å puste liv inn i elles
-          sterile midi opptak, og gje dei ein meir organisk og naturleg klang.
-        </p>
-        <p>
-          Som MIDI-filter kan Svev brukast før, mellom og etter annan
-          MIDI-programvare. Du kan til dømes sende MIDI frå Dorico gjennom Svev
-          og vidare inn i Logic for å få reinintonert avspeling frå notasjonen
-          din.
-        </p>
-        <p>
-          Svev let deg òg endre mikrostemming i sanntid medan du speler, slik at
-          du kan finstille intonasjonen til du får akkurat det harmoniske
-          uttrykket du ønskjer.
-        </p>
-        <p>
-          Ved transkribering av eldre opptak kan du justere kammertonen på
-          desimalnivå, eller bruke den innebygde lydanalysefunksjonen til å
-          rekonstruere realistiske tempereringar – til dømes ved arrangering av
-          gamle slåttar.
-        </p>
+          <div style="margin-bottom: 40px;">
+            <h3 style="color: var(--accent); font-size: 26px; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 2px solid var(--border);">Komponistar</h3>
+            <p>
+              Svev opnar for komposisjon i fleksible og levande tonesystem, der du
+              kan forme nye harmoniske rom og flytande stemningar. Du kan
+              programmere eigne mikrotuningar, kombinere ulike tempereringar, og
+              skape musikk som dynamisk skiftar mellom tonale landskap. 3 ulike
+              auto-intonasjonsmodus kan også brukast til å puste liv inn i elles
+              sterile midi opptak, og gje dei ein meir organisk og naturleg klang.
+            </p>
+            <p>
+              Som MIDI-filter kan Svev brukast før, mellom og etter annan
+              MIDI-programvare. Du kan til dømes sende MIDI frå Dorico gjennom Svev
+              og vidare inn i Logic for å få reinintonert avspeling frå notasjonen
+              din.
+            </p>
+            <p>
+              Svev let deg òg endre mikrostemming i sanntid medan du speler, slik at
+              du kan finstille intonasjonen til du får akkurat det harmoniske
+              uttrykket du ønskjer.
+            </p>
+            <p>
+              Ved transkribering av eldre opptak kan du justere kammertonen på
+              desimalnivå, eller bruke den innebygde lydanalysefunksjonen til å
+              rekonstruere realistiske tempereringar – til dømes ved arrangering av
+              gamle slåttar.
+            </p>
 
-        <video autoplay loop muted playsinline class="screenshot">
-          <source src="fullskjerm1.mp4" type="video/mp4" />
-          Din nettlesar støttar ikkje video.
-        </video>
-        <p class="caption">Demo frå fullskjermmodus</p>
+            <video autoplay loop muted playsinline class="screenshot">
+              <source src="fullskjerm1.mp4" type="video/mp4" />
+              Din nettlesar støttar ikkje video.
+            </video>
+            <p class="caption">Demo frå fullskjermmodus</p>
+          </div>
 
-        <h3>Pedagogar</h3>
-        <p>
-          Svev gjer undervisning i intonasjon, temperering og akustikk konkret
-          og interaktiv. Elevane kan sjå og høyre korleis små frekvensendringar
-          påverkar intervall og overtonar, og på den måten få ei intuitiv
-          forståing av korleis ulike stemmesystem fungerer.
-        </p>
-        <p>
-          Har du VGS-elevar som treng å forstå naturtonerekka og skilnaden
-          mellom denne og Wohltemperierung? Eller ein songar som skal lære å
-          kvede med reine naturtonar? Då kan Svev vere eit særs nyttig
-          supplement til undervisninga di — eit verktøy som gjer abstrakte
-          lydfenomen synlege, høyrbare og målbare.
-        </p>
+          <div style="margin-bottom: 40px;">
+            <h3 style="color: var(--accent); font-size: 26px; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 2px solid var(--border);">Pedagogar</h3>
+            <p>
+              Svev gjer undervisning i intonasjon, temperering og akustikk konkret
+              og interaktiv. Elevane kan sjå og høyre korleis små frekvensendringar
+              påverkar intervall og overtonar, og på den måten få ei intuitiv
+              forståing av korleis ulike stemmesystem fungerer.
+            </p>
+            <p>
+              Har du VGS-elevar som treng å forstå naturtonerekka og skilnaden
+              mellom denne og Wohltemperierung? Eller ein songar som skal lære å
+              kvede med reine naturtonar? Då kan Svev vere eit særs nyttig
+              supplement til undervisninga di — eit verktøy som gjer abstrakte
+              lydfenomen synlege, høyrbare og målbare.
+            </p>
+          </div>
 
-        <h3>Forskarar</h3>
-        <p>
-          Svev er eit elastisk og presist verktøy for dokumentasjon og analyse
-          av temperering. Appen viser både kammertone i hertz, cent-avvik for
-          kvart tonetrinn, og nøyaktig frekvens per tone.
-        </p>
-        <p>
-          Dette gjer det mogleg å visualisere og samanlikne intonasjonspraksisar
-          på ein presis og interaktiv måte, til dømes kan du ved hjelp av
-          verktøya utpeike intonasjonsforskjellar mellom ulike feletradisjonar,
-          vokaltradisjonar eller mellom enkeltutøvarar. Kanskje til og med
-          mellom ein enkelt utøvar på forskjellige tidspunkt i karrieren? Eller
-          kanskje eit kor som endrar intonasjonspraksis gjennom døgnet?
-        </p>
-        <p>
-          Svev kan slik nyttast som analyseverktøy. Men også som eksperimentell
-          plattform for å teste teoretiske modellar for intonasjon og
-          persepsjon.
-        </p>
+          <div style="margin-bottom: 40px;">
+            <h3 style="color: var(--accent); font-size: 26px; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 2px solid var(--border);">Forskarar</h3>
+            <p>
+              Svev er eit elastisk og presist verktøy for dokumentasjon og analyse
+              av temperering. Appen viser både kammertone i hertz, cent-avvik for
+              kvart tonetrinn, og nøyaktig frekvens per tone.
+            </p>
+            <p>
+              Dette gjer det mogleg å visualisere og samanlikne intonasjonspraksisar
+              på ein presis og interaktiv måte, til dømes kan du ved hjelp av
+              verktøya utpeike intonasjonsforskjellar mellom ulike feletradisjonar,
+              vokaltradisjonar eller mellom enkeltutøvarar. Kanskje til og med
+              mellom ein enkelt utøvar på forskjellige tidspunkt i karrieren? Eller
+              kanskje eit kor som endrar intonasjonspraksis gjennom døgnet? Eller gjennom øvelsen, etter å ha fått tilbakemeldingar frå dirigenten?
+            </p>
+            <p>
+              Svev kan slik nyttast som analyseverktøy. Men også som eksperimentell
+              plattform for å teste teoretiske modellar for intonasjon og
+              persepsjon.
+            </p>
+          </div>
 
-        <h3>Institusjonar</h3>
-        <p>
-          Svev er eit læringsverktøy som har ein tverrfagleg dimensjon, då det
-          knyter saman musikk, teknologi, matematikk, akustikk og programmering.
-          Elastisiteten i appen gjer at han kan tilpassast ulike faglege
-          kontekstar og læringsmål.
-        </p>
-        <p>
-          Appen kan nyttast i prosjektbasert undervisning, der studentar og
-          forskarar samarbeider om å utforske lyd, frekvens, og samanhengen
-          mellom teori og praksis.
-        </p>
-        <p>
-          Svev skaper med andre ord ein arena der utøvarar, komponistar,
-          pedagogar og forskarar kan møtast gjennom eit felles, presist og
-          fleksibelt verktøy - skapt for å byggje bru mellom levande, spelt
-          musikk, og elektroniske verktøy.
-        </p>
+          <div>
+            <h3 style="color: var(--accent); font-size: 26px; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 2px solid var(--border);">Institusjonar</h3>
+            <p>
+              Svev er eit læringsverktøy som har ein tverrfagleg dimensjon, då det
+              knyter saman musikk, teknologi, matematikk, akustikk og programmering.
+              Elastisiteten i appen gjer at han kan tilpassast ulike faglege
+              kontekstar og læringsmål.
+            </p>
+            <p>
+              Appen kan nyttast i prosjektbasert undervisning, der studentar og
+              forskarar samarbeider om å utforske lyd, frekvens, og samanhengen
+              mellom teori og praksis.
+            </p>
+            <p>
+              Svev skaper med andre ord ein arena der utøvarar, komponistar,
+              pedagogar og forskarar kan møtast gjennom eit felles, presist og
+              fleksibelt verktøy - skapt for å byggje bru mellom levande, spelt
+              musikk, og elektroniske verktøy.
+            </p>
+          </div>
+        </div>
 
-        <h2 id="funksjonar">Funksjonar og verktøy</h2>
-        <h3>Hovudvindauge</h3>
-        <video autoplay loop muted playsinline class="screenshot">
+        <div style="max-width: 1000px; margin: 60px auto; padding: 32px; background: var(--panel); border-radius: 12px;">
+          <h2 id="funksjonar" style="font-size: 36px; margin-bottom: 32px; text-align: center; color: var(--text);">Funksjonar og verktøy</h2>
+          
+          <div style="margin-bottom: 40px;">
+            <h3 style="color: var(--accent); font-size: 26px; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 2px solid var(--border);">Hovudvindauge</h3>
+            <video autoplay loop muted playsinline class="screenshot">
           <source src="sterkkonsonans1.mp4" type="video/mp4" />
           Din nettlesar støttar ikkje video.
         </video>
-        <p class="caption">Demo frå hovedvindauge</p>
+            <p class="caption">Demo frå hovedvindauge</p>
 
-        <ul>
-          <li>
-            <strong>Tangentar:</strong> Fargekoda for å vise intonasjonsavvik
-            frå 12-tonelik temperering (12-TET). Fargane endrar seg dynamisk for
-            å markere om tonen er låg (blå), høg (raud) eller presis (gull) i
-            forhold til standard temperering.
-          </li>
-          <li>
-            <strong>Slidarar:</strong> Kvar tone har ein eigen, fargekoda
-            intonasjons-slider som viser og justerer avvik frå 12-TET. Du kan
-            manuelt finstemme kvar tone og høyre resultatet i sanntid.
-          </li>
-          <li>
-            <strong>Aktivt tonepanel:</strong> Viser sanntidsinformasjon for
-            tonen som er aktiv: tonenamn, cent-avvik frå standard temperering,
-            eksakt frekvens i Hz, og MIDI-velocity (anslagstyrke).
-          </li>
-          <li>
-            <strong>Kammertonerute:</strong> Viser gjeldande kammertone
-            (A-frekvens) med opptil to desimalars presisjon. Nyttast som
-            referansepunkt for all manuell og automatisk stemming.
-          </li>
-        </ul>
+            <ul>
+              <li>
+                <strong>Tangentar:</strong> Fargekoda for å vise intonasjonsavvik
+                frå 12-tonelik temperering (12-TET). Fargane endrar seg dynamisk for
+                å markere om tonen er låg (blå), høg (raud) eller presis (gull) i
+                forhold til standard temperering.
+              </li>
+              <li>
+                <strong>Slidarar:</strong> Kvar tone har ein eigen, fargekoda
+                intonasjons-slider som viser og justerer avvik frå 12-TET. Du kan
+                manuelt finstemme kvar tone og høyre resultatet i sanntid.
+              </li>
+              <li>
+                <strong>Aktivt tonepanel:</strong> Viser sanntidsinformasjon for
+                tonen som er aktiv: tonenamn, cent-avvik frå standard temperering,
+                eksakt frekvens i Hz, og MIDI-velocity (anslagstyrke).
+              </li>
+              <li>
+                <strong>Kammertonerute:</strong> Viser gjeldande kammertone
+                (A-frekvens) med opptil to desimalars presisjon. Nyttast som
+                referansepunkt for all manuell og automatisk stemming.
+              </li>
+            </ul>
+          </div>
 
-        <h3>Tunervindauge</h3>
-        <video autoplay loop muted playsinline class="screenshot">
-          <source src="tuner1.mp4" type="video/mp4" />
-          Din nettlesar støttar ikkje video.
-        </video>
-        <p class="caption">Demo frå tunervindauge</p>
+          <div style="margin-bottom: 40px;">
+            <h3 style="color: var(--accent); font-size: 26px; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 2px solid var(--border);">Tunervindauge</h3>
+            <video autoplay loop muted playsinline class="screenshot">
+              <source src="tuner1.mp4" type="video/mp4" />
+              Din nettlesar støttar ikkje video.
+            </video>
+            <p class="caption">Demo frå tunervindauge</p>
 
-        <ul>
-          <li>
-            <strong>Tonebarometer:</strong> Viser aktive frekvensar i sanntid,
-            justert etter vald temperering. Gir eit oversyn over intonasjonen
-            til aktive tonar – lik ein dynamisk digital tuner.
-          </li>
-          <li>
-            <strong>Grafvindauge:</strong> Teiknar ei intonasjonskurve med
-            fargekoding: blå = låg (flat), gull = presis, raud = høg (skarp).
-            Grafen oppdaterer kontinuerleg og gir eit visuelt bilete av kor
-            stabil intonasjonen er over tid.
-          </li>
-          <li>
-            <strong>Vertikalt klaver:</strong> Viser dei same tonane som grafen
-            og reflekterer intonasjonen visuelt. Tangentane er klikkbare og kan
-            spelast som referansetonar for samanlikning.
-          </li>
-          <li>
-            <strong>Øre-ikon:</strong> Aktiverer eller deaktiverer
-            lyttefunksjonen for tonebarometer og graf. Når lytting er aktiv,
-            analyserer Svev innkommande lyd og oppdaterer visuell intonasjon i
-            sanntid. Når lytting er deaktivert, frysast grafen, slik at du kan
-            studere målingane utan vidare oppdatering.
-          </li>
-          <li>
-            <strong>Graf-rekkevidde:</strong> Lar deg avgrense toneområdet som
-            skal visast. Ved å fokusere på færre tonar får du større og meir
-            detaljert visuell framstilling.
-          </li>
-          <li>
-            <strong>Foreslå intonasjon:</strong> Analyserer grafdata og foreslår
-            automatisk ny temperering basert på målte tonehøgder.
-          </li>
-          <li>
-            <strong>Viskelær:</strong> Nullstiller eller tømmer grafen, slik at
-            du kan starte ein ny målesyklus.
-          </li>
-        </ul>
+            <ul>
+              <li>
+                <strong>Tonebarometer:</strong> Viser aktive frekvensar i sanntid,
+                justert etter vald temperering. Gir eit oversyn over intonasjonen
+                til aktive tonar – lik ein dynamisk digital tuner.
+              </li>
+              <li>
+                <strong>Grafvindauge:</strong> Teiknar ei intonasjonskurve med
+                fargekoding: blå = låg (flat), gull = presis, raud = høg (skarp).
+                Grafen oppdaterer kontinuerleg og gir eit visuelt bilete av kor
+                stabil intonasjonen er over tid.
+              </li>
+              <li>
+                <strong>Vertikalt klaver:</strong> Viser dei same tonane som grafen
+                og reflekterer intonasjonen visuelt. Tangentane er klikkbare og kan
+                spelast som referansetonar for samanlikning.
+              </li>
+              <li>
+                <strong>Øre-ikon:</strong> Aktiverer eller deaktiverer
+                lyttefunksjonen for tonebarometer og graf. Når lytting er aktiv,
+                analyserer Svev innkommande lyd og oppdaterer visuell intonasjon i
+                sanntid. Når lytting er deaktivert, frysast grafen, slik at du kan
+                studere målingane utan vidare oppdatering.
+              </li>
+              <li>
+                <strong>Graf-rekkevidde:</strong> Lar deg avgrense toneområdet som
+                skal visast. Ved å fokusere på færre tonar får du større og meir
+                detaljert visuell framstilling.
+              </li>
+              <li>
+                <strong>Foreslå intonasjon:</strong> Analyserer grafdata og foreslår
+                automatisk ny temperering basert på målte tonehøgder.
+              </li>
+              <li>
+                <strong>Viskelær:</strong> Nullstiller eller tømmer grafen, slik at
+                du kan starte ein ny målesyklus.
+              </li>
+            </ul>
+          </div>
 
-        <h3>Kjernefunksjonar</h3>
+          <div style="margin-bottom: 40px;">
+            <h3 style="color: var(--accent); font-size: 26px; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 2px solid var(--border);">Kjernefunksjonar</h3>
+            <ul>
+              <li>
+                Støttar nynorsk og engelsk, med språkval i innstillingar.
+              </li>
+              <li>
+                Full støtte for MIDI Polyphonic Expression (MPE) – kvar tone kan
+                justerast individuelt (krev MPE-kompatibel synth).
+              </li>
+              <li>
+                Over 100 førehandslagra tempereringar, inkludert historiske,
+                sjangerspesifikke og eigendefinerte variantar.
+              </li>
+              <li>
+                Preset-system for lagring og gjenbruk av eigne tempereringar, tonika
+                og innstillingar.
+              </li>
+              <li>
+                System for hurtigtastar og MIDI-tilordning, slik at du kan bytte
+                tempereringar og oppsett direkte frå kontrolleren din.
+              </li>
+            </ul>
+
+            <video autoplay loop muted playsinline class="screenshot">
+              <source src="binding1.mp4" type="video/mp4" />
+              Din nettlesar støttar ikkje video.
+            </video>
+            <p class="caption">Demo av MIDI-binding og hurtigtastar</p>
+          </div>
+
+          <div style="margin-bottom: 40px;">
+            <h3 style="color: var(--accent); font-size: 26px; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 2px solid var(--border);">Analyse og auto-temperering</h3>
+            <ul>
+              <li>
+                Sanntids tuner med grafisk visning av cent-avvik og klangkurve.
+              </li>
+              <li>Tone-trace-graf som viser variasjonar i pitch over tid.</li>
+              <li>
+                Frekvensanalysemodus for forsking og undervisning i klang og
+                intonasjon.
+              </li>
+              <li>
+                To metodar for tempereringsanalyse – frå lydfiler eller direkte
+                mikrofoninput – som kan importerast til eigne presets.
+              </li>
+              <li>
+                Flux-system som jamnar ut overgangar i auto-modus for naturlege
+                klangskift.
+              </li>
+              <li>
+                Tre auto-tempereringsmodusar:
+                <ul>
+                  <li>
+                    <em>Grovens Renstemmings-automaton</em>, basert på Eivind Groven
+                    sitt system for reinstemming.
+                  </li>
+                  <li>
+                    <em>Mild konsonans</em> og <em>Streng konsonans</em>, utvikla av
+                    Hans Martin Rundberg Austestad for fleksibel, musikalsk
+                    auto-temperering.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <video autoplay loop muted playsinline class="screenshot">
+              <source src="analyse1.mp4" type="video/mp4" />
+              Din nettlesar støttar ikkje video.
+            </video>
+            <p class="caption">Demo av analyse og auto-temperering</p>
+          </div>
+
+          <div>
+            <h3 style="color: var(--accent); font-size: 26px; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 2px solid var(--border);">Integrasjon og arbeidsflyt</h3>
+            <ul>
+              <li>
+                Installerast som frittståande program, og fungerer som mellomledd
+                mellom MIDI-kjelde og DAW, VST-synth eller ekstern maskinvare.
+              </li>
+              <li>
+                MPE-data blir sendt vidare til alle kompatible synthar og instrument
+                som støttar formatet.
+              </li>
+              <li>
+                Universell MIDI-filtermodus gjer at Svev kan nyttast utan behov for
+                plugin-format.
+              </li>
+            </ul>        <h3>Kjernefunksjonar</h3>
         <ul>
           <li>
             Støttar nynorsk og engelsk, med språkval i innstillingar.
@@ -419,188 +536,219 @@
           </li>
         </ul>
 
-        <h3>MPE-kompatible synthar (utval)</h3>
-        <ul>
-          <li>Arturia Pigments</li>
-          <li>Arturia CS-80 V4</li>
-          <li>Arturia Jup-8 V</li>
-          <li>Madrona Labs Aalto / Kaivo / Virta</li>
-          <li>Xfer Records Serum</li>
-          <li>Vital (Vital Audio)</li>
-          <li>Surge XT</li>
-          <li>ROLI Equator</li>
-          <li>FXpansion Cypher2 / Strobe2</li>
-          <li>u-he Diva</li>
-          <li>KV331 SynthMaster</li>
-          <li>Newfangled Audio Generate</li>
-          <li>Logic Pro X (innebygde MPE-instrument)</li>
-          <li>Ableton Live 11 – MPE-støtte</li>
-          <li>Bitwig Studio – MPE-støtte</li>
-        </ul>
+        <div style="margin-bottom: 40px;">
+          <h3 style="color: var(--accent); font-size: 26px; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 2px solid var(--border);">MPE-kompatible synthar (utval)</h3>
+          <ul>
+            <li>Arturia Pigments</li>
+            <li>Arturia CS-80 V4</li>
+            <li>Arturia Jup-8 V</li>
+            <li>Madrona Labs Aalto / Kaivo / Virta</li>
+            <li>Xfer Records Serum</li>
+            <li>Vital (Vital Audio)</li>
+            <li>Surge XT</li>
+            <li>ROLI Equator</li>
+            <li>FXpansion Cypher2 / Strobe2</li>
+            <li>u-he Diva</li>
+            <li>KV331 SynthMaster</li>
+            <li>Newfangled Audio Generate</li>
+            <li>Logic Pro X (innebygde MPE-instrument)</li>
+            <li>Ableton Live 11 – MPE-støtte</li>
+            <li>Bitwig Studio – MPE-støtte</li>
+          </ul>
+        </div>
+      </div>
       </section>
 
       <section id="en-content" class="hidden">
-        <h1>About Svev<img src="../icon.png" alt="Svev icon" /></h1>
-        <p
-          style="
-            font-size: 20px;
-            font-weight: 500;
-            color: var(--accent);
-            margin-bottom: 24px;
-          "
-        >
-          Explore a richer harmonic universe with real-time tuning.
-        </p>
-        <p>
-          Svev is a real-time application for dynamic microtuning based on MIDI
-          Polyphonic Expression (MPE). In short, it functions as an intermediary
-          between your MIDI instrument and audio software. It also allows you to
-          retune your recorded midi performances.
-        </p>
+        <h1>About Svev<img src="../icon.png" alt="Svev icon" /></h1>  
+        <div style="max-width: 1000px; margin: 40px auto; padding: 48px; background: var(--panel); border-radius: 12px; border: 3px solid var(--accent); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);">
+          <p
+            style="
+              font-size: clamp(20px, 4vw, 32px);
+              font-weight: 600;
+              color: var(--accent);
+              margin-bottom: 24px;
+              text-align: center;
+              line-height: 1.3;
+            "
+          >
+            Explore a richer harmonic universe with real-time tuning.
+          </p>
+          <p style="text-align: center; font-style: italic; color: var(--text-muted); margin: 0 auto 32px; max-width: 800px; font-size: clamp(14px, 2vw, 16px);">
+            - "Svev" is Norwegian for "soar" or "hover" — depicting the floating sensation of fluctuating intonation.
+          </p>
+          
+          <h3 style="font-size: 22px; margin-bottom: 16px; color: var(--accent);">Overview</h3>
+          
+          <p>
+            Svev is a real-time application for dynamic microtuning based on MIDI
+            Polyphonic Expression (MPE). In short, it functions as an intermediary
+            between your MIDI instrument and audio software. It also allows you to
+            retune your recorded midi performances.
+          </p>
 
-        <p>
-          When you play on a MIDI keyboard, Svev receives the signals, adjusts
-          the intonation in real-time according to the settings you have chosen,
-          and sends the adjusted signal to the sound-producing program – for
-          example Logic or Ableton Live.
-        </p>
+          <p>
+            When you play on a MIDI keyboard, Svev receives the signals, adjusts
+            the intonation in real-time according to the settings you have chosen,
+            and sends the adjusted signal to the sound-producing program – for
+            example Logic or Ableton Live.
+          </p>
 
-        <p>
-          Because Svev uses the MPE format, each note can be adjusted
-          individually, not just the entire instrument simultaneously. This
-          means you can explore finer nuances in intonation – for example by
-          using:
-        </p>
+          <p>
+            Because Svev uses the MPE format, each note can be adjusted
+            individually, not just the entire instrument simultaneously. This
+            means you can explore finer nuances in intonation – for example by
+            using:
+          </p>
 
-        <ul>
-          <li>Auto-tuning modes that automatically correct pitch,</li>
-          <li>
-            Historical temperaments (such as pure tuning or meantone
-            temperament),
-          </li>
-          <li>or custom tuning systems you create yourself.</li>
-        </ul>
+          <ul>
+            <li>Auto-tuning modes that automatically correct pitch,</li>
+            <li>
+              Historical temperaments (such as pure tuning or meantone
+              temperament),
+            </li>
+            <li>or custom tuning systems you create yourself.</li>
+          </ul>
 
-        <p>
-          For this to work, the audio software or synth you use must support
-          MPE, which was first introduced in 2018. Many modern DAWs and VST
-          instruments now have built-in support for this. Svev uses this
-          capability to introduce microtuning in several ways.
-        </p>
+          <p>
+            For this to work, the audio software or synth you use must support
+            MPE, which was first introduced in 2018. Many modern DAWs and VST
+            instruments now have built-in support for this. Svev uses this
+            capability to introduce microtuning in several ways.
+          </p>
 
-        <video autoplay loop muted playsinline class="screenshot">
-          <source src="groven example 1.mp4" type="video/mp4" />
-          Your browser does not support video.
-        </video>
-        <p class="caption">Demo from Groven mode</p>
+          <video autoplay loop muted playsinline class="screenshot">
+            <source src="groven example 1.mp4" type="video/mp4" />
+            Your browser does not support video.
+          </video>
+          <p class="caption">Demo from Groven mode</p>
+        </div>
 
-        <h2 id="applications">Applications</h2>
+        <div style="max-width: 1000px; margin: 60px auto; padding: 32px; background: var(--panel); border-radius: 12px;">
+          <h2 id="applications" style="font-size: 36px; margin-bottom: 32px; text-align: center; color: var(--text);">Applications</h2>
 
-        <h3>Performers</h3>
-        <p>
-          Svev functions as an ear-training tool that lets you experience and
-          control small differences in intonation in real-time. You can practice
-          with a sophisticated tuner that continuously updates according to the
-          selected temperament, and investigate how microscopic variations
-          affect timbre and consonance.
-        </p>
-        <p>
-          This makes Svev an ideal tool for sharpening intonation awareness and
-          developing precision control – whether you play, sing, or combine this
-          with MIDI control. This way you can work on fine-tuning your own
-          intonation and get direct, auditory feedback on how small adjustments
-          change the sound.
-        </p>
+          <div style="margin-bottom: 40px;">
+            <h3 style="color: var(--accent); font-size: 26px; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 2px solid var(--border);">Performers</h3>
+            <p>
+              Svev functions as an ear-training tool that lets you experience and
+              control small differences in intonation in real-time. You can practice
+              with a sophisticated tuner that continuously updates according to the
+              selected temperament, and investigate how microscopic variations
+              affect timbre and consonance.
+            </p>
+            <p>
+              This makes Svev an ideal tool for sharpening intonation awareness and
+              developing precision control – whether you play, sing, or combine this
+              with MIDI control. This way you can work on fine-tuning your own
+              intonation and get direct, auditory feedback on how small adjustments
+              change the sound.
+            </p>
 
-        <video autoplay loop muted playsinline class="screenshot">
-          <source src="tuner2.mp4" type="video/mp4" />
-          Your browser does not support video.
-        </video>
-        <p class="caption">Demo from tuner window</p>
+            <video autoplay loop muted playsinline class="screenshot">
+              <source src="tuner2.mp4" type="video/mp4" />
+              Your browser does not support video.
+            </video>
+            <p class="caption">Demo from tuner window</p>
+          </div>
 
-        <h3>Composers</h3>
-        <p>
-          Svev opens up composition in flexible and living tuning systems, where
-          you can shape new harmonic spaces and flowing moods. You can program
-          your own microtunings, combine different temperaments, and create
-          music that dynamically shifts between tonal landscapes. 3 different
-          auto-tuning modes can also be used to breathe life into otherwise
-          sterile midi recordings, giving them a more organic and natural sound.
-        </p>
-        <p>
-          As a MIDI filter, Svev can be used before, between, and after other
-          MIDI software. For example, you can send MIDI from Dorico through Svev
-          and into Logic to get pure-intonation playback from your notation.
-        </p>
-        <p>
-          Svev also lets you change microtuning in real-time while playing, so
-          you can fine-tune the intonation until you get exactly the harmonic
-          expression you want.
-        </p>
-        <p>
-          When transcribing older recordings, you can adjust the concert pitch
-          at decimal level, or use the built-in audio analysis function to
-          reconstruct realistic temperaments – for example when arranging old
-          folk tunes.
-        </p>
+          <div style="margin-bottom: 40px;">
+            <h3 style="color: var(--accent); font-size: 26px; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 2px solid var(--border);">Composers</h3>
+            <p>
+              Svev opens up composition in flexible and living tuning systems, where
+              you can shape new harmonic spaces and flowing moods. You can program
+              your own microtunings, combine different temperaments, and create
+              music that dynamically shifts between tonal landscapes. 3 different
+              auto-tuning modes can also be used to breathe life into otherwise
+              sterile midi recordings, giving them a more organic and natural sound.
+            </p>
+            <p>
+              As a MIDI filter, Svev can be used before, between, and after other
+              MIDI software. For example, you can send MIDI from Dorico through Svev
+              and into Logic to get pure-intonation playback from your notation.
+            </p>
+            <p>
+              Svev also lets you change microtuning in real-time while playing, so
+              you can fine-tune the intonation until you get exactly the harmonic
+              expression you want.
+            </p>
+            <p>
+              When transcribing older recordings, you can adjust the concert pitch
+              at decimal level, or use the built-in audio analysis function to
+              reconstruct realistic temperaments – for example when arranging old
+              folk tunes.
+            </p>
 
-        <video autoplay loop muted playsinline class="screenshot">
-          <source src="fullskjerm1.mp4" type="video/mp4" />
-          Your browser does not support video.
-        </video>
-        <p class="caption">Demo from fullscreen mode</p>
+            <video autoplay loop muted playsinline class="screenshot">
+              <source src="fullskjerm1.mp4" type="video/mp4" />
+              Your browser does not support video.
+            </video>
+            <p class="caption">Demo from fullscreen mode</p>
+          </div>
 
-        <h3>Educators</h3>
-        <p>
-          Svev makes teaching intonation, temperament, and acoustics concrete
-          and interactive. Students can see and hear how small frequency changes
-          affect intervals and overtones, and thus gain an intuitive
-          understanding of how different tuning systems work.
-        </p>
-        <p>
-          Do you have high school students who need to understand the harmonic
-          series and the difference between this and Wohltemperierung? Or a
-          singer who should learn to sing with pure natural tones? Then Svev can
-          be a particularly useful supplement to your teaching — a tool that
-          makes abstract sound phenomena visible, audible, and measurable.
-        </p>
+          <div style="margin-bottom: 40px;">
+            <h3 style="color: var(--accent); font-size: 26px; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 2px solid var(--border);">Educators</h3>
+            <p>
+              Svev makes teaching intonation, temperament, and acoustics concrete
+              and interactive. Students can see and hear how small frequency changes
+              affect intervals and overtones, and thus gain an intuitive
+              understanding of how different tuning systems work.
+            </p>
+            <p>
+              Do you have high school students who need to understand the harmonic
+              series and the difference between this and Wohltemperierung? Or a
+              singer who should learn to sing with pure natural tones? Then Svev can
+              be a particularly useful supplement to your teaching — a tool that
+              makes abstract sound phenomena visible, audible, and measurable.
+            </p>
+          </div>
 
-        <h3>Researchers</h3>
-        <p>
-          Svev is a flexible and precise tool for documentation and analysis of
-          temperament. The app shows both concert pitch in hertz, cent deviation
-          for each scale degree, and exact frequency per note.
-        </p>
-        <p>
-          This makes it possible to visualize and compare intonation practices
-          in a precise and interactive way, for example by studying differences
-          between various fiddle traditions or vocal traditions.
-        </p>
-        <p>
-          Svev can be used both as an analysis tool and as an experimental
-          platform for testing theoretical models of intonation and perception.
-        </p>
+          <div style="margin-bottom: 40px;">
+            <h3 style="color: var(--accent); font-size: 26px; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 2px solid var(--border);">Researchers</h3>
+            <p>
+              Svev is a flexible and precise tool for documentation and analysis of
+              temperament. The app shows both concert pitch in hertz, cent deviation
+              for each scale degree, and exact frequency per note.
+            </p>
+            <p>
+              This makes it possible to visualize and compare intonation practices
+              in a precise and interactive way. For example, you can use the tools
+              to highlight intonation differences between different fiddle
+              traditions, vocal traditions, or between individual performers. Maybe
+              even between a single performer at different times in their career?
+              Or perhaps a choir that changes intonation practice throughout the
+              day? Or through rehearsal, after receiving feedback from the conductor?
+            </p>
+            <p>
+              Svev can be used both as an analysis tool and as an experimental
+              platform for testing theoretical models of intonation and perception.
+            </p>
+          </div>
 
-        <h3>Institutions</h3>
-        <p>
-          Svev is an interdisciplinary learning tool that connects music,
-          technology, mathematics, acoustics, and programming.
-        </p>
-        <p>
-          The app can be used in project-based teaching, where students and
-          researchers collaborate to explore sound, frequency, and the
-          connection between theory and practice.
-        </p>
-        <p>
-          In other words, Svev creates an arena where performers, composers,
-          educators, and researchers can meet through a common, precise, and
-          flexible tool.
-        </p>
+          <div>
+            <h3 style="color: var(--accent); font-size: 26px; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 2px solid var(--border);">Institutions</h3>
+            <p>
+              Svev is an interdisciplinary learning tool that connects music,
+              technology, mathematics, acoustics, and programming.
+            </p>
+            <p>
+              The app can be used in project-based teaching, where students and
+              researchers collaborate to explore sound, frequency, and the
+              connection between theory and practice.
+            </p>
+            <p>
+              In other words, Svev creates an arena where performers, composers,
+              educators, and researchers can meet through a common, precise, and
+              flexible tool.
+            </p>
+          </div>
+        </div>
 
-        <h2 id="features">Features and Tools</h2>
+        <div style="max-width: 1000px; margin: 60px auto; padding: 32px; background: var(--panel); border-radius: 12px;">
+          <h2 id="features" style="font-size: 36px; margin-bottom: 32px; text-align: center; color: var(--text);">Features and Tools</h2>
 
-        <h3>Main Window</h3>
-        <video autoplay loop muted playsinline class="screenshot">
+          <div style="margin-bottom: 40px;">
+            <h3 style="color: var(--accent); font-size: 26px; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 2px solid var(--border);">Main Window</h3>
+            <video autoplay loop muted playsinline class="screenshot">
           <source src="sterkkonsonans1.mp4" type="video/mp4" />
           Your browser does not support video.
         </video>
@@ -632,158 +780,169 @@
           </li>
         </ul>
 
-        <h3>Tuner Window</h3>
-        <video autoplay loop muted playsinline class="screenshot">
-          <source src="tuner1.mp4" type="video/mp4" />
-          Your browser does not support video.
-        </video>
-        <p class="caption">Demo from tuner</p>
+          <div style="margin-bottom: 40px;">
+            <h3 style="color: var(--accent); font-size: 26px; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 2px solid var(--border);">Tuner Window</h3>
+            <video autoplay loop muted playsinline class="screenshot">
+              <source src="tuner1.mp4" type="video/mp4" />
+              Your browser does not support video.
+            </video>
+            <p class="caption">Demo from tuner</p>
 
-        <ul>
-          <li>
-            <strong>Pitch meter:</strong> Shows active frequencies in real-time,
-            adjusted according to selected temperament. Provides an overview of
-            the intonation of active notes – like a dynamic digital tuner.
-          </li>
-          <li>
-            <strong>Graph window:</strong> Draws an intonation curve with color
-            coding: blue = low (flat), gold = precise, red = high (sharp). The
-            graph updates continuously and provides a visual picture of how
-            stable the intonation is over time.
-          </li>
-          <li>
-            <strong>Vertical keyboard:</strong> Shows the same notes as the
-            graph and reflects intonation visually. Keys are clickable and can
-            be played as reference tones for comparison.
-          </li>
-          <li>
-            <strong>Ear icon:</strong> Activates or deactivates the listening
-            function for pitch meter and graph. When listening is active, Svev
-            analyzes incoming sound and updates visual intonation in real-time.
-            When listening is deactivated, the graph freezes, allowing you to
-            study the measurements without further updates.
-          </li>
-          <li>
-            <strong>Graph range:</strong> Lets you limit the pitch range to be
-            displayed. By focusing on fewer notes, you get a larger and more
-            detailed visual representation.
-          </li>
-          <li>
-            <strong>Suggest intonation:</strong> Analyzes graph data and
-            automatically suggests new temperament based on measured pitches.
-          </li>
-          <li>
-            <strong>Eraser:</strong> Resets or clears the graph, allowing you to
-            start a new measurement cycle.
-          </li>
-        </ul>
-
-        <h3>Core Features</h3>
-        <ul>
-          <li>
-            Supports Norwegian Nynorsk and English, with language selection in
-            settings.
-          </li>
-          <li>
-            Full support for MIDI Polyphonic Expression (MPE) – each note can be
-            adjusted individually (requires MPE-compatible synth).
-          </li>
-          <li>
-            Over 100 pre-configured temperaments, including historical,
-            genre-specific, and custom-defined variants.
-          </li>
-          <li>
-            Preset system for saving and reusing custom temperaments, tonics,
-            and settings.
-          </li>
-          <li>
-            System for hotkeys and MIDI assignment, allowing you to switch
-            temperaments and configurations directly from your controller.
-          </li>
-        </ul>
-
-        <video autoplay loop muted playsinline class="screenshot">
-          <source src="binding1.mp4" type="video/mp4" />
-          Your browser does not support video.
-        </video>
-        <p class="caption">Demo of MIDI binding and hotkeys</p>
-
-        <h3>Analysis and Auto-tempering</h3>
-        <ul>
-          <li>
-            Real-time tuner with graphical display of cent deviation and timbre
-            curve.
-          </li>
-          <li>Tone-trace graph showing pitch variations over time.</li>
-          <li>
-            Frequency analysis mode for research and teaching in timbre and
-            intonation.
-          </li>
-          <li>
-            Two methods for temperament analysis – from audio files or direct
-            microphone input – which can be imported as custom presets.
-          </li>
-          <li>
-            Flux system that smooths transitions in auto-mode for natural timbre
-            shifts.
-          </li>
-          <li>
-            Three auto-tempering modes:
             <ul>
               <li>
-                <em>Groven's Pure Tuning Automaton</em>, based on Eivind
-                Groven's system for pure tuning.
+                <strong>Pitch meter:</strong> Shows active frequencies in real-time,
+                adjusted according to selected temperament. Provides an overview of
+                the intonation of active notes – like a dynamic digital tuner.
               </li>
               <li>
-                <em>Mild Consonance</em> and <em>Strict Consonance</em>,
-                developed by Hans Martin Rundberg Austestad for flexible,
-                musical auto-tempering.
+                <strong>Graph window:</strong> Draws an intonation curve with color
+                coding: blue = low (flat), gold = precise, red = high (sharp). The
+                graph updates continuously and provides a visual picture of how
+                stable the intonation is over time.
+              </li>
+              <li>
+                <strong>Vertical keyboard:</strong> Shows the same notes as the
+                graph and reflects intonation visually. Keys are clickable and can
+                be played as reference tones for comparison.
+              </li>
+              <li>
+                <strong>Ear icon:</strong> Activates or deactivates the listening
+                function for pitch meter and graph. When listening is active, Svev
+                analyzes incoming sound and updates visual intonation in real-time.
+                When listening is deactivated, the graph freezes, allowing you to
+                study the measurements without further updates.
+              </li>
+              <li>
+                <strong>Graph range:</strong> Lets you limit the pitch range to be
+                displayed. By focusing on fewer notes, you get a larger and more
+                detailed visual representation.
+              </li>
+              <li>
+                <strong>Suggest intonation:</strong> Analyzes graph data and
+                automatically suggests new temperament based on measured pitches.
+              </li>
+              <li>
+                <strong>Eraser:</strong> Resets or clears the graph, allowing you to
+                start a new measurement cycle.
               </li>
             </ul>
-          </li>
-        </ul>
+          </div>
 
-        <video autoplay loop muted playsinline class="screenshot">
-          <source src="analyse1.mp4" type="video/mp4" />
-          Your browser does not support video.
-        </video>
-        <p class="caption">Demo of analysis and auto-tempering</p>
+          <div style="margin-bottom: 40px;">
+            <h3 style="color: var(--accent); font-size: 26px; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 2px solid var(--border);">Core Features</h3>
+            <ul>
+              <li>
+                Supports Norwegian Nynorsk and English, with language selection in
+                settings.
+              </li>
+              <li>
+                Full support for MIDI Polyphonic Expression (MPE) – each note can be
+                adjusted individually (requires MPE-compatible synth).
+              </li>
+              <li>
+                Over 100 pre-configured temperaments, including historical,
+                genre-specific, and custom-defined variants.
+              </li>
+              <li>
+                Preset system for saving and reusing custom temperaments, tonics,
+                and settings.
+              </li>
+              <li>
+                System for hotkeys and MIDI assignment, allowing you to switch
+                temperaments and configurations directly from your controller.
+              </li>
+            </ul>
 
-        <h3>Integration and Workflow</h3>
-        <ul>
-          <li>
-            Installed as standalone program, functioning as intermediary between
-            MIDI source and DAW, VST synth, or external hardware.
-          </li>
-          <li>
-            MPE data is sent to all compatible synths and instruments that
-            support the format.
-          </li>
-          <li>
-            Universal MIDI filter mode allows Svev to be used without requiring
-            plugin format.
-          </li>
-          <li>Support for external audio interfaces and microphones.</li>
-        </ul>
+            <video autoplay loop muted playsinline class="screenshot">
+              <source src="binding1.mp4" type="video/mp4" />
+              Your browser does not support video.
+            </video>
+            <p class="caption">Demo of MIDI binding and hotkeys</p>
+          </div>
 
-        <h3>MPE-Compatible Synths (Selection)</h3>
-        <ul>
-          <li>Arturia Pigments</li>
-          <li>Arturia CS-80 V4</li>
-          <li>Arturia Jup-8 V</li>
-          <li>Madrona Labs Aalto / Kaivo / Virta</li>
-          <li>Xfer Records Serum</li>
-          <li>Vital (Vital Audio)</li>
-          <li>Surge XT</li>
-          <li>ROLI Equator</li>
-          <li>FXpansion Cypher2 / Strobe2</li>
-          <li>u-he Diva</li>
-          <li>KV331 SynthMaster</li>
-          <li>Newfangled Audio Generate</li>
-          <li>Logic Pro X (built-in MPE instruments)</li>
-          <li>Ableton Live 11 – MPE support</li>
-          <li>Bitwig Studio – MPE support</li>
-        </ul>
+          <div style="margin-bottom: 40px;">
+            <h3 style="color: var(--accent); font-size: 26px; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 2px solid var(--border);">Analysis and Auto-tempering</h3>
+            <ul>
+              <li>
+                Real-time tuner with graphical display of cent deviation and timbre
+                curve.
+              </li>
+              <li>Tone-trace graph showing pitch variations over time.</li>
+              <li>
+                Frequency analysis mode for research and teaching in timbre and
+                intonation.
+              </li>
+              <li>
+                Two methods for temperament analysis – from audio files or direct
+                microphone input – which can be imported as custom presets.
+              </li>
+              <li>
+                Flux system that smooths transitions in auto-mode for natural timbre
+                shifts.
+              </li>
+              <li>
+                Three auto-tempering modes:
+                <ul>
+                  <li>
+                    <em>Groven's Pure Tuning Automaton</em>, based on Eivind
+                    Groven's system for pure tuning.
+                  </li>
+                  <li>
+                    <em>Mild Consonance</em> and <em>Strict Consonance</em>,
+                    developed by Hans Martin Rundberg Austestad for flexible,
+                    musical auto-tempering.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <video autoplay loop muted playsinline class="screenshot">
+              <source src="analyse1.mp4" type="video/mp4" />
+              Your browser does not support video.
+            </video>
+            <p class="caption">Demo of analysis and auto-tempering</p>
+          </div>
+
+          <div style="margin-bottom: 40px;">
+            <h3 style="color: var(--accent); font-size: 26px; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 2px solid var(--border);">Integration and Workflow</h3>
+            <ul>
+              <li>
+                Installed as standalone program, functioning as intermediary between
+                MIDI source and DAW, VST synth, or external hardware.
+              </li>
+              <li>
+                MPE data is sent to all compatible synths and instruments that
+                support the format.
+              </li>
+              <li>
+                Universal MIDI filter mode allows Svev to be used without requiring
+                plugin format.
+              </li>
+              <li>Support for external audio interfaces and microphones.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 style="color: var(--accent); font-size: 26px; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 2px solid var(--border);">MPE-Compatible Synths (Selection)</h3>
+            <ul>
+              <li>Arturia Pigments</li>
+              <li>Arturia CS-80 V4</li>
+              <li>Arturia Jup-8 V</li>
+              <li>Madrona Labs Aalto / Kaivo / Virta</li>
+              <li>Xfer Records Serum</li>
+              <li>Vital (Vital Audio)</li>
+              <li>Surge XT</li>
+              <li>ROLI Equator</li>
+              <li>FXpansion Cypher2 / Strobe2</li>
+              <li>u-he Diva</li>
+              <li>KV331 SynthMaster</li>
+              <li>Newfangled Audio Generate</li>
+              <li>Logic Pro X (built-in MPE instruments)</li>
+              <li>Ableton Live 11 – MPE support</li>
+              <li>Bitwig Studio – MPE support</li>
+            </ul>
+          </div>
+        </div>
       </section>
         </p>
       </section>
@@ -802,9 +961,9 @@
         { nb: "home-nb", en: "home-en" },
         { nb: "mobile-home-nb", en: "mobile-home-en" },
         { nb: "mobile-svev-nav-nb", en: "mobile-svev-nav-en" },
-        { nb: "mobile-fot-uses-nb", en: "mobile-fot-uses-en" },
-        { nb: "mobile-fot-features-nb", en: "mobile-fot-features-en" },
-        { nb: "mobile-fot-sections-nb", en: "mobile-fot-sections-en" },
+        { nb: "mobile-sviv-uses-nb", en: "mobile-sviv-uses-en" },
+        { nb: "mobile-sviv-features-nb", en: "mobile-sviv-features-en" },
+        { nb: "mobile-sviv-sections-nb", en: "mobile-sviv-sections-en" },
         { nb: "btn-nb", en: "btn-en" }
       );
     </script>

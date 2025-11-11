@@ -22,11 +22,11 @@ Dette prosjektet er organisert for å støtte flere app-sider med delt funksjona
 │   ├── index.html       # Svev hovedside
 │   └── svev-theme.css   # Svev fargetema (varme bruntoner)
 │
-├── fot/                 # Fot-spesifikke filer
-│   ├── index.html       # Fot hovedside
-│   ├── foticon.png      # Fot ikon
-│   ├── fot1.png, fot2.png # Fot screenshots
-│   └── fot-theme.css    # Fot fargetema (varme raudtoner)
+├── sviv/                 # Sviv-spesifikke filer
+│   ├── index.html       # Sviv hovedside
+│   ├── svivicon.png      # Sviv ikon
+│   ├── sviv1.png, sviv2.png # Sviv screenshots
+│   └── sviv-theme.css    # Sviv fargetema (varme raudtoner)
 │
 ├── icon.png             # Svev ikon
 ├── Screenshot.png       # Svev screenshots
@@ -78,7 +78,7 @@ Dette prosjektet er organisert for å støtte flere app-sider med delt funksjona
        <link rel="stylesheet" href="nyapp-theme.css" />
      </head>
      <body>
-       <!-- Kopier struktur fra fot/index.html eller svev index.html -->
+       <!-- Kopier struktur fra sviv/index.html eller svev index.html -->
        <script src="../shared/language.js"></script>
        <script>
          initLanguageSwitch(
@@ -114,7 +114,7 @@ Dette prosjektet er organisert for å støtte flere app-sider med delt funksjona
 - Primær: #d4a574 (gylden)
 - Bakgrunn: #1a1410 (mørk brun)
 
-### Fot (varme raudtoner)
+### Sviv (varme raudtoner)
 
 - Primær: #d47474 (raud/terracotta)
 - Bakgrunn: #1a1410 (mørk brun)
