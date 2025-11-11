@@ -369,6 +369,10 @@ h3 {
   margin: 24px auto 8px auto;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   display: block;
+  will-change: transform;
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .caption {
